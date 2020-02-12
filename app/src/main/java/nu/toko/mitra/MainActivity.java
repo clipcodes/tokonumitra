@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 //        FirebaseMessaging.getInstance().subscribeToTopic("oke");
         init();
         declare();
+
+        //Oke
     }
 
     public void init(){
