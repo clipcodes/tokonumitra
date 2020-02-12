@@ -239,6 +239,7 @@
     <color name="greytranspa0">#FAFAFA</color>
     <color name="greytranspa1">#16607d8b</color>
     <color name="greytranspa2">#41607D8B</color>
+    <color name="greytranspa3">#77050505</color>
     <color name="greytranspacomment">#16607d8b</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>

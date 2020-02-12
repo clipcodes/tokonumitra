@@ -29,6 +29,7 @@ import java.util.List;
 
 import nu.toko.mitra.Adapter.Product2Adapter;
 import nu.toko.mitra.Model.ProductModelNU;
+import nu.toko.mitra.Model.UserMitra;
 import nu.toko.mitra.Model.UserMitraModel;
 import nu.toko.mitra.Page.AddProduct;
 import nu.toko.mitra.R;
@@ -38,6 +39,7 @@ import nu.toko.mitra.Utils.UserPrefs;
 
 import static nu.toko.mitra.Utils.Staticvar.BERAT_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.DESKRIPSI_PRODUK;
+import static nu.toko.mitra.Utils.Staticvar.DIKIRIMDARI;
 import static nu.toko.mitra.Utils.Staticvar.HARGA_ADMIN;
 import static nu.toko.mitra.Utils.Staticvar.HARGA_MITRA;
 import static nu.toko.mitra.Utils.Staticvar.ID_PRODUK;
@@ -45,10 +47,12 @@ import static nu.toko.mitra.Utils.Staticvar.ID_SUB_KATEGORI;
 import static nu.toko.mitra.Utils.Staticvar.KONDISI_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.NAMA_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.PRODUCTMITRA;
+import static nu.toko.mitra.Utils.Staticvar.RATING;
 import static nu.toko.mitra.Utils.Staticvar.SLASH;
 import static nu.toko.mitra.Utils.Staticvar.STATUSBYPAGE;
 import static nu.toko.mitra.Utils.Staticvar.STOK;
 import static nu.toko.mitra.Utils.Staticvar.TERJUAL;
+import static nu.toko.mitra.Utils.Staticvar.TOTALFEEDBACK;
 import static nu.toko.mitra.Utils.Staticvar.URL_GAMBAR;
 
 public class Home extends Fragment {
@@ -192,9 +196,12 @@ public class Home extends Fragment {
                     pnu.setStok(object.getString(STOK));
                     pnu.setTerjual(object.getString(TERJUAL));
                     pnu.setBerat_produk(object.getString(BERAT_PRODUK));
+                    pnu.setRating((float)object.getDouble(RATING));
+                    pnu.setTotalfeedback(object.getString(TOTALFEEDBACK));
+                    pnu.setDikirimdari(object.getString(DIKIRIMDARI));
 
                     JSONObject mitrajson = new JSONObject(object.getString("mitra"));
-                    UserMitraModel um = new UserMitraModel();
+                    UserMitra um = new UserMitra();
                     um.setKabupaten_mitra(mitrajson.getString("kabupaten_mitra"));
                     um.setNama_toko_mitra(mitrajson.getString("nama_toko_mitra"));
                     pnu.setId_mitra(mitrajson.getString("id_mitra"));

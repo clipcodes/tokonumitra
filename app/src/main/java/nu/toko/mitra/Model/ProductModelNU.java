@@ -30,13 +30,16 @@ public class ProductModelNU {
     private String kondisi_produk;
     private String terjual;
     private String stok;
+    private float rating;
     private int harga_mitra;
     private int harga_admin;
     private int qty;
     private String created_at;
     private String gambarfirst;
+    private String totalfeedback;
+    private String dikirimdari;
     private boolean checked;
-    private UserMitraModel owner;
+    private UserMitra owner;
 
     public static final String CREATE_TABLE =
             "CREATE TABLE " + TABLE_NAME + "("
@@ -202,11 +205,35 @@ public class ProductModelNU {
         }
     };
 
-    public UserMitraModel getOwner() {
+    public float getRating() {
+        return rating;
+    }
+
+    public void setRating(float rating) {
+        this.rating = rating;
+    }
+
+    public String getTotalfeedback() {
+        return totalfeedback;
+    }
+
+    public void setTotalfeedback(String totalfeedback) {
+        this.totalfeedback = totalfeedback;
+    }
+
+    public UserMitra getOwner() {
         return owner;
     }
 
-    public void setOwner(UserMitraModel owner) {
+    public void setOwner(UserMitra owner) {
         this.owner = owner;
+    }
+
+    public String getDikirimdari() {
+        return dikirimdari;
+    }
+
+    public void setDikirimdari(String dikirimdari) {
+        this.dikirimdari = dikirimdari;
     }
 }

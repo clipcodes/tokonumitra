@@ -66,6 +66,9 @@ public class Staticvar {
     public static final String TITLE = "title";
     public static final String IMAGES = "images";
     public static final String DESCRIPTION = "description";
+    public static final String RATING = "rating";
+    public static final String TOTALFEEDBACK = "totalfeedback";
+    public static final String DIKIRIMDARI = "dikirimdari";
     public static final String SPECIFICATION = "specification";
     public static final String USERNAME = "username";
     public static final String PASSWORD = "password";
@@ -84,7 +87,6 @@ public class Staticvar {
     public static final String NOTIFICATION = "notification";
     public static final String CREATED_AT = "created_at";
     public static final String UPDATED_AT = "updated_at";
-    public static final String RATING = "rating";
     public static final String ALAMAT_KIRIM = "alamat_kirim";
     public static final String METODE_KIRIM = "metode_kirim";
     public static final String URL_BUKTI_TRANSAKSI = "url_bukti_transaksi";

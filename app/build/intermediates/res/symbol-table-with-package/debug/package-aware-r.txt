@@ -756,6 +756,7 @@ color greytranspa
 color greytranspa0
 color greytranspa1
 color greytranspa2
+color greytranspa3
 color greytranspacomment
 color highlighted_text_material_dark
 color highlighted_text_material_light
@@ -1157,6 +1158,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable check
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1248,6 +1250,7 @@ drawable ikon_send
 drawable ikon_tambah
 drawable ikon_tambahcolor
 drawable logoputih
+drawable lokasi
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1269,6 +1272,7 @@ drawable promo1
 drawable rounded
 drawable spring_dot_background
 drawable spring_dot_stroke_background
+drawable stok
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable worm_dot_background
@@ -1475,6 +1479,7 @@ id gone
 id gotex
 id group_divider
 id groups
+id habis
 id harga
 id home
 id homeAsUp
@@ -1534,6 +1539,7 @@ id listdata
 id lodingbot
 id login
 id logout
+id lokasi
 id masked
 id message
 id method
@@ -1550,6 +1556,7 @@ id nama_toko_mitra
 id namabank
 id namabanktujuan
 id namalengkap
+id namatoko
 id navigation_header_container
 id nested
 id nestedscrol
