@@ -86,6 +86,7 @@ public class Home extends Fragment {
     @Override
     public void onStart() {
         productModelList.clear();
+        product2Adapter.notifyDataSetChanged();
         reqString.go(suksesproducthome, PRODUCTMITRA+UserPrefs.getId(getActivity())+SLASH+STATUS);
         super.onStart();
     }
@@ -138,13 +139,13 @@ public class Home extends Fragment {
                     inpublished.setBackgroundColor(colorwhite);
                     inwaiting.setBackgroundColor(colorwhite);
                     indicline.setBackgroundColor(colorprimary);
-                    STATUS = 3;
+                    STATUS = 2;
                     break;
                 case R.id.waiting:
                     inpublished.setBackgroundColor(colorwhite);
                     inwaiting.setBackgroundColor(colorprimary);
                     indicline.setBackgroundColor(colorwhite);
-                    STATUS = 2;
+                    STATUS = 0;
                     break;
                 case R.id.published:
                     inpublished.setBackgroundColor(colorprimary);
