@@ -1600,6 +1600,8 @@ id pesanedt
 id photo_view
 id pilihan
 id pilihfile
+id pilihkabkot
+id pilihprov
 id pin
 id pos
 id price
@@ -1626,6 +1628,7 @@ id right_icon
 id right_side
 id row
 id row_reverse
+id rv
 id rvaddress
 id rvbill
 id rvbuyerfeedback
@@ -1886,6 +1889,7 @@ layout modelitem_payitem
 layout modelitem_paymethod
 layout modelitem_photo
 layout modelitem_photonull
+layout modelitem_pilihan
 layout modelitem_promo
 layout modelitem_purchase
 layout modeltab_transaction
@@ -1917,6 +1921,7 @@ layout page_editeprofile
 layout page_home
 layout page_kategorichooser
 layout page_koinnu
+layout page_kota
 layout page_notification
 layout page_orders
 layout page_pay
@@ -1924,6 +1929,7 @@ layout page_paymentmethod
 layout page_pencarian
 layout page_photoview
 layout page_profil
+layout page_prov
 layout page_purchase
 layout page_transaction
 layout page_transaksi

@@ -146,4 +146,12 @@ public class UserPrefs {
     public static void setUrl_profil(String url_profil, Context c) {
         Pref.write(c, "url_profil", url_profil);
     }
+
+    public static String getNamakab(Context c) {
+        return Pref.read(c, "namakab", "false");
+    }
+
+    public static void setNamakab(String namakab, Context c) {
+        Pref.write(c, "namakab", namakab);
+    }
 }

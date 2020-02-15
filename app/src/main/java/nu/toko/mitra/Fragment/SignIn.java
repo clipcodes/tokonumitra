@@ -120,6 +120,7 @@ public class SignIn extends Fragment {
                 UserPrefs.setDeskripsi_toko(object.getString("deskripsi_toko_mitra"), getActivity());
                 UserPrefs.setRekening(object.getString("no_rekening_mitra"), getActivity());
                 UserPrefs.setNik(object.getString("nik_mitra"), getActivity());
+                UserPrefs.setNamakab(object.getString("namakota"), getActivity());
                 FirebaseMessaging.getInstance().subscribeToTopic("mitra"+UserPrefs.getId(getActivity()));
                 Intent i = new Intent(getActivity(), MainActivity.class);
                 startActivity(i);

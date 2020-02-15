@@ -42,6 +42,8 @@ public class Staticvar {
     public static final String TRANSAKSIDIKIRIM = DOMAIN+API+"transaksi/dikirim/";
     public static final String TRANSAKSIDITOLAK = DOMAIN+API+"transaksi/ditolak/";
     public static final String FEEDBACKALL = DOMAIN+API+"feedback/all/";
+    public static final String DATPROVINSI = DOMAIN+API+"data/provinsi";
+    public static final String DATKOTA = DOMAIN+API+"data/kota/";
 
     public static final String NOTIF_TITLE = "title";
     public static final String NOTIF_DATA = "data";

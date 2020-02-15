@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
@@ -22,11 +24,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import nu.toko.mitra.MainActivity;
+import nu.toko.mitra.Model.KotaModel;
+import nu.toko.mitra.Model.ProvModel;
 import nu.toko.mitra.Model.UserMitraModel;
+import nu.toko.mitra.Page.PageKota;
+import nu.toko.mitra.Page.PageProv;
 import nu.toko.mitra.R;
 import nu.toko.mitra.Reqs.UserReqs;
 import nu.toko.mitra.Utils.UserPrefs;
 
+import static android.app.Activity.RESULT_OK;
 import static nu.toko.mitra.Utils.Staticvar.USER_DAFTAR;
 
 public class SignUp extends Fragment {
@@ -34,10 +41,12 @@ public class SignUp extends Fragment {
     CardView signup;
     ProgressBar loding;
     RequestQueue requestQueue;
-    EditText email_mitra, nama_mitra, nama_toko_mitra, nik_mitra, alamat_toko_mitra, no_telp_mitra, no_rekening_mitra, deskripsi_toko_mitra, provinsi_mitra, kabupaten_mitra, kecamatan_mitra, kode_pos_mitra, password;
+    EditText email_mitra, nama_mitra, nama_toko_mitra, nik_mitra, alamat_toko_mitra, no_telp_mitra, no_rekening_mitra, deskripsi_toko_mitra, kecamatan_mitra, kode_pos_mitra, password;
     TextView err;
-    TextView gotex;
+    TextView gotex, provinsi_mitra, kabupaten_mitra;
     ProgressBar progress;
+    String idprovterpilih = null;
+    String kabterpilih = "";
 
     public SignUp() {
     }
@@ -54,7 +63,7 @@ public class SignUp extends Fragment {
                 UserMitraModel usr = new UserMitraModel();
                 usr.setEmail_mitra(email_mitra.getText().toString());
                 usr.setProvinsi_mitra(provinsi_mitra.getText().toString());
-                usr.setKabupaten_mitra(kabupaten_mitra.getText().toString());
+                usr.setKabupaten_mitra(kabterpilih);
                 usr.setKecamatan_mitra(kecamatan_mitra.getText().toString());
                 usr.setNama_toko_mitra(nama_toko_mitra.getText().toString());
                 usr.setNama_mitra(nama_mitra.getText().toString());
@@ -101,13 +110,13 @@ public class SignUp extends Fragment {
                     return;
                 }
 
-                if (usr.getProvinsi_mitra().isEmpty()){
-                    err.setText("Isikan Provinsi Tinggal");
+                if (usr.getProvinsi_mitra().contains("Pilih")){
+                    err.setText("Pilih Provinsi Tinggal");
                     return;
                 }
 
-                if (usr.getKabupaten_mitra().isEmpty()){
-                    err.setText("Isikan Provinsi Tinggal");
+                if (kabterpilih.contains("Pilih")){
+                    err.setText("Pilih Kota/Kab Tinggal");
                     return;
                 }
 
@@ -167,6 +176,27 @@ public class SignUp extends Fragment {
         kabupaten_mitra = view.findViewById(R.id.kabupaten_mitra);
         kecamatan_mitra = view.findViewById(R.id.kecamatan_mitra);
         kode_pos_mitra = view.findViewById(R.id.kode_pos_mitra);
+
+        view.findViewById(R.id.pilihprov).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), PageProv.class);
+                startActivityForResult(i, 121);
+            }
+        });
+
+        view.findViewById(R.id.pilihkabkot).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (idprovterpilih==null){
+                    Toast.makeText(getActivity(), "Pilih Provinsi Dahulu", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                Intent i = new Intent(getActivity(), PageKota.class);
+                i.putExtra("idprov", idprovterpilih);
+                startActivityForResult(i, 131);
+            }
+        });
     }
 
     private Response.Listener<String> res = new Response.Listener<String>() {
@@ -193,6 +223,7 @@ public class SignUp extends Fragment {
                 UserPrefs.setDeskripsi_toko(object.getString("deskripsi_toko_mitra"), getActivity());
                 UserPrefs.setRekening(object.getString("no_rekening_mitra"), getActivity());
                 UserPrefs.setNik(object.getString("nik_mitra"), getActivity());
+                UserPrefs.setNamakab(object.getString("namakota"), getActivity());
                 FirebaseMessaging.getInstance().subscribeToTopic("mitra"+UserPrefs.getId(getActivity()));
                 Intent i = new Intent(getActivity(), MainActivity.class);
                 startActivity(i);
@@ -203,4 +234,25 @@ public class SignUp extends Fragment {
         }
     };
 
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK){
+            if (requestCode == 121){
+                ProvModel model = new ProvModel();
+                model.setNama_provinsi(data.getStringExtra("nama"));
+                model.setProvinsi_id(data.getStringExtra("id"));
+                provinsi_mitra.setText(data.getStringExtra("nama"));
+                idprovterpilih = data.getStringExtra("id");
+            }
+            if (requestCode == 131){
+                KotaModel model = new KotaModel();
+                model.setNama_kota(data.getStringExtra("nama"));
+                model.setKota_id(data.getStringExtra("id"));
+                kabupaten_mitra.setText(data.getStringExtra("nama"));
+                kabterpilih = data.getStringExtra("id");
+            }
+        }
+    }
 }

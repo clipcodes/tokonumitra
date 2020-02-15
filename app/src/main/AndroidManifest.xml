@@ -98,6 +98,12 @@
         <activity android:name=".Page.ChatRoom"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Page.PageProv"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Page.PageKota"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
