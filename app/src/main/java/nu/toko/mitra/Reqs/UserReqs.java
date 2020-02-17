@@ -52,7 +52,9 @@ public class UserReqs {
             {
                 Map<String, String>  params = new HashMap<>();
                 params.put("email_mitra" , usr.getEmail_mitra());
-                params.put("password_mitra" , pass);
+                if (pass!=null){
+                    params.put("password_mitra" , pass);
+                }
                 params.put("nama_mitra" , usr.getNama_mitra());
                 params.put("nama_toko_mitra" , usr.getNama_toko_mitra());
                 params.put("nik_mitra" , usr.getNik_mitra());

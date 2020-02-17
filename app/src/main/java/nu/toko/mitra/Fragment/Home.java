@@ -71,12 +71,14 @@ public class Home extends Fragment {
     FrameLayout dicline, waiting, published;
     View indicline, inwaiting, inpublished;
     int colorprimary, colorwhite;
+    View roots;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.page_home, container, false);
 
+        roots = root;
         Others.MahathirOptionGambar(getActivity());
         init(root);
 
@@ -220,6 +222,11 @@ public class Home extends Fragment {
                     rvproduct.scrollToPosition(productModelList.size());
                 }
 
+                if (productModelList.size()<=0){
+                    roots.findViewById(R.id.nodata).setVisibility(View.VISIBLE);
+                } else {
+                    roots.findViewById(R.id.nodata).setVisibility(View.GONE);
+                }
                 isLoadData = true;
                 loadingbot.hide();
                 PAGE+= 1;

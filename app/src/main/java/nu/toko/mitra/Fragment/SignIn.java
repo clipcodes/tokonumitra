@@ -1,5 +1,6 @@
 package nu.toko.mitra.Fragment;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +17,8 @@ import androidx.fragment.app.Fragment;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.auth.api.signin.SignInAccount;
+import com.google.android.gms.common.SignInButton;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.json.JSONException;
@@ -35,11 +38,12 @@ public class SignIn extends Fragment {
     ProgressBar loding;
     EditText email, pass;
     TextView err;
-    TextView logintex;
     CardView login;
     TextView gotex;
     ProgressBar progress;
+    KirimData kirimData;
     RequestQueue requestQueue;
+    SignInButton google;
 
     public SignIn() {
     }
@@ -74,6 +78,7 @@ public class SignIn extends Fragment {
     }
 
     void init(View view){
+        google = view.findViewById(R.id.google);
         requestQueue = Volley.newRequestQueue(getActivity());
         email = view.findViewById(R.id.email);
         pass = view.findViewById(R.id.password);
@@ -81,6 +86,13 @@ public class SignIn extends Fragment {
         progress = view.findViewById(R.id.progress);
         gotex = view.findViewById(R.id.gotex);
         err = view.findViewById(R.id.err);
+
+        google.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                kirimData.trigerhome();
+            }
+        });
     }
 
     void go(boolean go){
@@ -121,6 +133,7 @@ public class SignIn extends Fragment {
                 UserPrefs.setRekening(object.getString("no_rekening_mitra"), getActivity());
                 UserPrefs.setNik(object.getString("nik_mitra"), getActivity());
                 UserPrefs.setNamakab(object.getString("namakota"), getActivity());
+                UserPrefs.setNamatoko(object.getString("nama_toko_mitra"), getActivity());
                 FirebaseMessaging.getInstance().subscribeToTopic("mitra"+UserPrefs.getId(getActivity()));
                 Intent i = new Intent(getActivity(), MainActivity.class);
                 startActivity(i);
@@ -130,4 +143,26 @@ public class SignIn extends Fragment {
             }
         }
     };
+
+    public interface KirimData{
+        void trigerhome();
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        try {
+            kirimData = (KirimData) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement TextClicked");
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        kirimData = null;
+        super.onDetach();
+    }
 }

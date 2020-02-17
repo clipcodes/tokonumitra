@@ -17,7 +17,7 @@ public class UserPrefs {
     private String nik;
     private String alamat_toko;
     private String rekening;
-    private String deskripsi_toko;
+    private String namatoko;
 
     public static boolean isLogin(Context c) {
         return Boolean.valueOf(Pref.read(c, "login", "false"));
@@ -153,5 +153,13 @@ public class UserPrefs {
 
     public static void setNamakab(String namakab, Context c) {
         Pref.write(c, "namakab", namakab);
+    }
+
+    public static String getNamatoko(Context c) {
+        return Pref.read(c, "namatoko", "false");
+    }
+
+    public static void setNamatoko(String namatoko, Context c) {
+        Pref.write(c, "namatoko", namatoko);
     }
 }

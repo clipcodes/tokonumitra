@@ -56,6 +56,7 @@ public class TransactionNU extends Fragment {
     GroupBillingHomeAdapter groupBillingAdapter;
     List<BillingModelNU> billingModels;
     RequestQueue requestQueue;
+    View roots;
 
     @Nullable
     @Override
@@ -66,6 +67,7 @@ public class TransactionNU extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         Others.MahathirOptionGambar(getActivity());
+        roots = view;
         init(view);
     }
 
@@ -144,6 +146,12 @@ public class TransactionNU extends Fragment {
                     bill.setBillingItemModels(billingItemModels);
 
                     billingModels.add(bill);
+                }
+
+                if (billingModels.size()<=0){
+                    roots.findViewById(R.id.nodata).setVisibility(View.VISIBLE);
+                } else {
+                    roots.findViewById(R.id.nodata).setVisibility(View.GONE);
                 }
                 groupBillingAdapter.notifyDataSetChanged();
             } catch (JSONException e){

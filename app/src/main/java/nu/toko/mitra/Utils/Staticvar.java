@@ -37,6 +37,7 @@ public class Staticvar {
     public static final String BAYAR = DOMAIN+API+"transaksi/bayar";
     public static final String USER_LOGIN = DOMAIN+API+"user/mitra/login";
     public static final String USER_DAFTAR = DOMAIN+API+"user/mitra/daftar";
+    public static final String USER_EDIT = DOMAIN+API+"user/mitra/edit/";
     public static final String TRANSAKSIMITRA = DOMAIN+API+"transaksi/mitra/";
     public static final String TRANSAKSIDIKONFIR = DOMAIN+API+"transaksi/dikonfir/";
     public static final String TRANSAKSIDIKIRIM = DOMAIN+API+"transaksi/dikirim/";

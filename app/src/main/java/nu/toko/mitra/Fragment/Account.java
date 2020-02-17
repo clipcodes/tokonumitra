@@ -18,6 +18,7 @@ import nu.toko.mitra.Dialog.DialogLogout;
 import nu.toko.mitra.Page.Chats;
 import nu.toko.mitra.Page.EditProfile;
 import nu.toko.mitra.Page.Login;
+import nu.toko.mitra.Page.UserSetting;
 import nu.toko.mitra.R;
 import nu.toko.mitra.Utils.UserPrefs;
 
@@ -67,7 +68,7 @@ public class Account extends Fragment {
                     getActivity().startActivity(aa);
                     break;
                 case R.id.edit_profile:
-                    Intent go = new Intent(getActivity(), EditProfile.class);
+                    Intent go = new Intent(getActivity(), UserSetting.class);
                     getActivity().startActivity(go);
                     break;
                 case R.id.logout:

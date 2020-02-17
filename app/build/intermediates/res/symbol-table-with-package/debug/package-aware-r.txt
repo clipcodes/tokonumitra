@@ -1254,6 +1254,7 @@ drawable lokasi
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable nodata
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1476,6 +1477,7 @@ id fullname
 id ghost_view
 id go
 id gone
+id google
 id gotex
 id group_divider
 id groups
@@ -1564,6 +1566,7 @@ id never
 id nik_mitra
 id no_rekening_mitra
 id no_telp_mitra
+id nodata
 id nominal
 id none
 id norek
@@ -1648,6 +1651,7 @@ id rvproduct
 id rvpurchase
 id rvsearch
 id rvsubcategories
+id save
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1939,6 +1943,7 @@ layout select_dialog_singlechoice_material
 layout spring_dot_layout
 layout support_simple_spinner_dropdown_item
 layout users_auth
+layout users_setting
 layout users_signin
 layout users_signup
 layout worm_dot_layout
