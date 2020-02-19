@@ -1426,6 +1426,7 @@ id decor_content_parent
 id default_activity_button
 id delete
 id delivery
+id deliverycontainer
 id deliveryprog
 id deliverystatus
 id deliverytex
@@ -1445,6 +1446,7 @@ id diclinetex
 id dimensions
 id direct
 id disableHome
+id diskon
 id donestatus
 id dot
 id edit
@@ -1626,6 +1628,7 @@ id qty
 id radio
 id rectangle
 id reduce
+id resi
 id right
 id right_icon
 id right_side
@@ -1926,6 +1929,7 @@ layout page_home
 layout page_kategorichooser
 layout page_koinnu
 layout page_kota
+layout page_loader
 layout page_notification
 layout page_orders
 layout page_pay

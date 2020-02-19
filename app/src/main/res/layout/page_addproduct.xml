@@ -388,6 +388,38 @@
                 android:background="@color/greytranspa1"
                 android:layout_height="10dp"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:text="Diskon (Rupiah)"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|start"
+                        android:textColor="@color/textcolor1"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/diskon"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:hint="Diskon (Rupiah)"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/greytranspa1"
+                android:layout_height="10dp"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:textSize="14sp"

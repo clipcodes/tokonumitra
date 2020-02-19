@@ -97,7 +97,7 @@
         android:layout_gravity="bottom"
         android:background="@color/white"
         android:padding="5dp"
-        android:layout_height="45dp">
+        android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:id="@+id/edit"

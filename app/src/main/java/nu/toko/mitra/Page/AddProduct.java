@@ -55,6 +55,7 @@ import nu.toko.mitra.Reqs.ReqString;
 import static nu.toko.mitra.Utils.Staticvar.BERAT_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.DESCRIPTION;
 import static nu.toko.mitra.Utils.Staticvar.DESKRIPSI_PRODUK;
+import static nu.toko.mitra.Utils.Staticvar.DISKON;
 import static nu.toko.mitra.Utils.Staticvar.HARGA_MITRA;
 import static nu.toko.mitra.Utils.Staticvar.ID_KATEGORI;
 import static nu.toko.mitra.Utils.Staticvar.ID_MITRA;
@@ -77,7 +78,7 @@ public class AddProduct extends AppCompatActivity {
     private static final int REQUEST_WRITE_PERMISSION = 786;
     private static final int KATEGORI = 345;
     private static final int SUBKATEGORI = 3235;
-    EditText nama, deskripsi, harga, stok, berat;
+    EditText nama, deskripsi, harga, stok, berat, diskon;
     String kondisiselect, kategoriselect, subkategoriselect;
     TextView kategoritex, subkategoritex;
     FrameLayout kategori, subkategori;
@@ -115,6 +116,7 @@ public class AddProduct extends AppCompatActivity {
         productModelNU.setBerat_produk(getIntent().getStringExtra(BERAT_PRODUK));
         productModelNU.setKondisi_produk(getIntent().getStringExtra(KONDISI_PRODUK));
         productModelNU.setStok(getIntent().getStringExtra(STOK));
+        productModelNU.setDiskon(getIntent().getIntExtra(DISKON, 0));
         productModelNU.setHarga_mitra(getIntent().getIntExtra(HARGA_MITRA, 0));
 
         nama.setText(productModelNU.getNama_produk());
@@ -122,6 +124,7 @@ public class AddProduct extends AppCompatActivity {
         harga.setText(String.valueOf(productModelNU.getHarga_mitra()));
         stok.setText(productModelNU.getStok());
         berat.setText(productModelNU.getBerat_produk());
+        diskon.setText(String.valueOf(productModelNU.getDiskon()));
         subkategori.setVisibility(View.VISIBLE);
         kategoritex.setText("Kategori "+getIntent().getStringExtra(NAMA_KATEGORI));
         subkategoritex.setText("Sub Kategori "+getIntent().getStringExtra("namasubkategori"));
@@ -215,6 +218,7 @@ public class AddProduct extends AppCompatActivity {
         harga = findViewById(R.id.harga);
         stok = findViewById(R.id.stock);
         berat = findViewById(R.id.berat);
+        diskon = findViewById(R.id.diskon);
 
         kategoriselect = "Baru";
         kondisipilihan = new ArrayList<>();
@@ -248,6 +252,7 @@ public class AddProduct extends AppCompatActivity {
                 String hargap = harga.getText().toString();
                 String stokp = stok.getText().toString();
                 String beratp = berat.getText().toString();
+                String diskonp = diskon.getText().toString();
 
                 if (files.size() <= 0 && !edited){
                     err.setText("Tambahkan Foto Produk");
@@ -303,6 +308,7 @@ public class AddProduct extends AppCompatActivity {
                 adds.setKategori(kategoriselect);
                 adds.setSubkategori(subkategoriselect);
                 adds.setStok(stokp);
+                adds.setDiskon(diskonp);
                 adds.setUris(files);
 
                 add.setCardBackgroundColor(getResources().getColor(R.color.white));

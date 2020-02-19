@@ -46,6 +46,7 @@ import nu.toko.mitra.Utils.Others;
 import static nu.toko.mitra.Utils.Staticvar.BERAT_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.CREATED_AT;
 import static nu.toko.mitra.Utils.Staticvar.DESKRIPSI_PRODUK;
+import static nu.toko.mitra.Utils.Staticvar.DISKON;
 import static nu.toko.mitra.Utils.Staticvar.FEEDBACKALL;
 import static nu.toko.mitra.Utils.Staticvar.HARGA_ADMIN;
 import static nu.toko.mitra.Utils.Staticvar.HARGA_MITRA;
@@ -198,6 +199,7 @@ public class Details extends AppCompatActivity {
                 i.putExtra(STOK, pnu.getStok());
                 i.putExtra(ID_KATEGORI, kategoriid);
                 i.putExtra(NAMA_KATEGORI, kategoriname);
+                i.putExtra(DISKON, pnu.getDiskon());
                 i.putExtra(ID_SUB_KATEGORI, subkategoriid);
                 i.putExtra("namasubkategori", subkategoriname);
                 i.putExtra("gambararr", gambararr);
@@ -249,6 +251,7 @@ public class Details extends AppCompatActivity {
                 pnu.setTerjual(jsonObject.getString(TERJUAL));
                 pnu.setStok(jsonObject.getString(STOK));
                 pnu.setHarga_mitra(jsonObject.getInt(HARGA_MITRA));
+                pnu.setDiskon(jsonObject.getInt(DISKON));
                 pnu.setHarga_admin(jsonObject.getInt(HARGA_ADMIN));
                 pnu.setCreated_at(jsonObject.getString(CREATED_AT));
                 pnu.setQty(1);

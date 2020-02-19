@@ -40,6 +40,7 @@ import nu.toko.mitra.Utils.UserPrefs;
 import static nu.toko.mitra.Utils.Staticvar.BERAT_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.DESKRIPSI_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.DIKIRIMDARI;
+import static nu.toko.mitra.Utils.Staticvar.DISKON;
 import static nu.toko.mitra.Utils.Staticvar.HARGA_ADMIN;
 import static nu.toko.mitra.Utils.Staticvar.HARGA_MITRA;
 import static nu.toko.mitra.Utils.Staticvar.ID_PRODUK;
@@ -202,6 +203,7 @@ public class Home extends Fragment {
                     pnu.setRating((float)object.getDouble(RATING));
                     pnu.setTotalfeedback(object.getString(TOTALFEEDBACK));
                     pnu.setDikirimdari(object.getString(DIKIRIMDARI));
+                    pnu.setDiskon(object.getInt(DISKON));
 
                     JSONObject mitrajson = new JSONObject(object.getString("mitra"));
                     UserMitra um = new UserMitra();

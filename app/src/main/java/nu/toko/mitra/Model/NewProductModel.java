@@ -17,6 +17,7 @@ public class NewProductModel {
     private String kondisi;
     private String stok;
     private String berat;
+    private String diskon;
     private List<PhotoModel> uris;
 
     public String getNama() {
@@ -105,5 +106,13 @@ public class NewProductModel {
 
     public void setDeletedphoto(String deletedphoto) {
         this.deletedphoto = deletedphoto;
+    }
+
+    public String getDiskon() {
+        return diskon;
+    }
+
+    public void setDiskon(String diskon) {
+        this.diskon = diskon;
     }
 }

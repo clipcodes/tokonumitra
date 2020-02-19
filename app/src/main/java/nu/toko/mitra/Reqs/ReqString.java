@@ -152,6 +152,7 @@ public class ReqString {
         smr.addStringParam("id_sub_kategori", newProductModel.getSubkategori());
         smr.addStringParam("berat_produk", newProductModel.getBerat());
         smr.addStringParam("kondisi_produk", newProductModel.getKondisi());
+        smr.addStringParam("diskon", newProductModel.getDiskon());
         smr.addStringParam("harga_mitra", newProductModel.getHarga());
         smr.addStringParam("stok", newProductModel.getStok());
 
@@ -187,6 +188,7 @@ public class ReqString {
         smr.addStringParam("berat_produk", newProductModel.getBerat());
         smr.addStringParam("kondisi_produk", newProductModel.getKondisi());
         smr.addStringParam("harga_mitra", newProductModel.getHarga());
+        smr.addStringParam("diskon", newProductModel.getDiskon());
         smr.addStringParam("stok", newProductModel.getStok());
         if (newProductModel.getDeletedphoto()!=null){
             smr.addStringParam("gambarhapus", newProductModel.getDeletedphoto());

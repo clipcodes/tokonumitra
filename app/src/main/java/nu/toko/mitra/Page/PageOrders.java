@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -62,6 +64,7 @@ import static nu.toko.mitra.Utils.Staticvar.PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.QTY;
 import static nu.toko.mitra.Utils.Staticvar.RATING;
 import static nu.toko.mitra.Utils.Staticvar.RESI;
+import static nu.toko.mitra.Utils.Staticvar.SLASH;
 import static nu.toko.mitra.Utils.Staticvar.STATUS_TRANSAKSI;
 import static nu.toko.mitra.Utils.Staticvar.SUB_TOTAL;
 import static nu.toko.mitra.Utils.Staticvar.TGL_PEMESANAN;
@@ -78,8 +81,10 @@ public class PageOrders  extends AppCompatActivity {
     List<BillingItemModel> billingItemModels;
     PayListAdapter billadap;
     RecyclerView rvpay;
-    CardView confirms, dicline, delivery, chat, lihatfoto, informasi;
+    CardView confirms, dicline, chat, lihatfoto, informasi, delivery;
+    LinearLayout deliverycontainer;
     RequestQueue requestQueue;
+    EditText resi;
     int status, idtrans = 0;
     LinearLayout containeraction, containerbukti;
     String fotobukti = null;
@@ -106,6 +111,7 @@ public class PageOrders  extends AppCompatActivity {
         rvpay.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         rvpay.setAdapter(billadap);
 
+        resi = findViewById(R.id.resi);
         lihatfoto = findViewById(R.id.lihatfoto);
         alamat = findViewById(R.id.alamat);
         subtotal = findViewById(R.id.subtotal);
@@ -115,6 +121,7 @@ public class PageOrders  extends AppCompatActivity {
         atasnama = findViewById(R.id.atasnama);
         namabank = findViewById(R.id.namabank);
         nominal = findViewById(R.id.nominal);
+        deliverycontainer = findViewById(R.id.deliverycontainer);
         norek = findViewById(R.id.norek);
         informasi = findViewById(R.id.informasi);
         infohead = findViewById(R.id.infohead);
@@ -137,7 +144,7 @@ public class PageOrders  extends AppCompatActivity {
         lihatfoto.setOnClickListener(new klik());
 
         if (status==2){
-            delivery.setVisibility(View.VISIBLE);
+            deliverycontainer.setVisibility(View.VISIBLE);
             dicline.setVisibility(View.VISIBLE);
         } else if (status==3){
             informasi.setVisibility(View.VISIBLE);
@@ -180,10 +187,18 @@ public class PageOrders  extends AppCompatActivity {
                     });
                     break;
                 case R.id.delivery:
+                    if (resi.getText().toString().isEmpty()){
+                        Toast.makeText(getApplicationContext(), "Resi Pengiriman Kosong", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
                     new DialogInfo(PageOrders.this, "Jika anda mengkonfirmasi pengiriman ini, maka barang yang dipesan telah dalam proses pengiriman.").mentriger(new DialogInfo.Go() {
                         @Override
                         public void trigerbos() {
-                            new ReqString(PageOrders.this, requestQueue).go(respontrans, TRANSAKSIDIKIRIM+idtrans);
+                            findViewById(R.id.deliverytex).setVisibility(View.INVISIBLE);
+                            findViewById(R.id.deliveryprog).setVisibility(View.VISIBLE);
+
+                            new ReqString(PageOrders.this, requestQueue).go(respontrans, TRANSAKSIDIKIRIM+idtrans+SLASH+resi.getText().toString());
                         }
                     });
                     break;

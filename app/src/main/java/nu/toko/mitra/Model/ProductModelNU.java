@@ -38,6 +38,7 @@ public class ProductModelNU {
     private String gambarfirst;
     private String totalfeedback;
     private String dikirimdari;
+    private int diskon;
     private boolean checked;
     private UserMitra owner;
 
@@ -235,5 +236,13 @@ public class ProductModelNU {
 
     public void setDikirimdari(String dikirimdari) {
         this.dikirimdari = dikirimdari;
+    }
+
+    public int getDiskon() {
+        return diskon;
+    }
+
+    public void setDiskon(int diskon) {
+        this.diskon = diskon;
     }
 }

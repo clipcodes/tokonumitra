@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,6 +50,10 @@ public class Product2Adapter extends RecyclerView.Adapter<Product2Adapter.ViewHo
         holder.price.setText("Rp."+ Others.PercantikHarga(Integer.valueOf(items.get(position).getHarga_mitra())));
         ImageLoader.getInstance().displayImage(FOTOPRODUK + items.get(position).getGambarfirst(), holder.thumb);
         holder.title.setText(items.get(position).getNama_produk());
+        holder.namatoko.setText(items.get(position).getOwner().getNama_toko_mitra());
+        holder.lokasi.setText(items.get(position).getDikirimdari());
+        holder.stock.setText(items.get(position).getStok()+" Stock");
+        holder.star.setRating(items.get(position).getRating());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,14 +73,19 @@ public class Product2Adapter extends RecyclerView.Adapter<Product2Adapter.ViewHo
 
     protected class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView title, price;
+        TextView title, price, namatoko, lokasi, stock;
         ImageView thumb;
+        RatingBar star;
 
         public ViewHolder(final View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
             price = itemView.findViewById(R.id.price);
+            star = itemView.findViewById(R.id.star);
             thumb = itemView.findViewById(R.id.thumb);
+            namatoko = itemView.findViewById(R.id.namatoko);
+            lokasi = itemView.findViewById(R.id.lokasi);
+            stock = itemView.findViewById(R.id.stock);
         }
     }
 
