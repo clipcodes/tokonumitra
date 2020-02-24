@@ -91,7 +91,7 @@ public class Details extends AppCompatActivity {
 
     CardView edit;
 
-    TextView productname, price, title, totalfeedback, totalterjual, kondisi
+    TextView productname, price, title, review, kondisi, rating, ratingfeed
             , stok, kategori, pengirimanmitra, deskripsi;
     String kategoriname, kategoriid, subkategoriname, subkategoriid;
 
@@ -144,8 +144,9 @@ public class Details extends AppCompatActivity {
         deskripsi = findViewById(R.id.deskripsi);
         pnu = new ProductModelNU();
 
-        totalfeedback = findViewById(R.id.totalfeedback);
-        totalterjual = findViewById(R.id.totalterjual);
+        ratingfeed = findViewById(R.id.ratingfeed);
+        rating = findViewById(R.id.rating);
+        review = findViewById(R.id.review);
         productname.setText(produknama);
         price.setText("Rp."+ Others.PercantikHarga(harga));
         title.setText(produknama);
@@ -215,10 +216,13 @@ public class Details extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(response);
 
-                totalterjual.setText("  "+jsonObject.getString("totalfeedback")+" Reviews | "+jsonObject.getString("terjual")+" Terjual");
+                review.setText("  "+jsonObject.getString("totalfeedback")+" Reviews | "+jsonObject.getString("terjual")+" Terjual");
+                rating.setText("("+jsonObject.getString("rating")+")");
+                ratingfeed.setText("("+jsonObject.getString("rating")+")");
                 star.setRating(Float.valueOf(jsonObject.getString("rating")));
                 kondisi.setText(jsonObject.getString("kondisi_produk"));
                 stok.setText(jsonObject.getString("stok"));
+                pengirimanmitra.setText(jsonObject.getString("dikirimdari"));
 
                 JSONObject kategorijson = new JSONObject(jsonObject.getString("kategori"));
                 kategoriname = kategorijson.getString("nama_kategori");
@@ -229,7 +233,6 @@ public class Details extends AppCompatActivity {
                 subkategoriid = subkategorijson.getString("id_sub_kategori");
 
                 JSONObject mitrajson = new JSONObject(jsonObject.getString("mitra"));
-                pengirimanmitra.setText(mitrajson.getString("kabupaten_mitra"));
 
                 deskripsiarr = jsonObject.getString("deskripsi_produk").split("-");
                 descriptionAdapter = new DescriptionAdapter(Details.this, deskripsiarr);

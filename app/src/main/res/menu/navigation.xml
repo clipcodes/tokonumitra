@@ -4,18 +4,14 @@
     <item
         android:id="@+id/home"
         android:title="Beranda"
-        android:icon="@drawable/icon_home" />
-<!--    <item-->
-<!--        android:id="@+id/tambah"-->
-<!--        android:title="Tambah"-->
-<!--        android:icon="@drawable/ikon_tambah" />-->
+        android:icon="@drawable/menuproduk" />
     <item
         android:id="@+id/transaction"
         android:title="Trasaksi"
-        android:icon="@drawable/icon_transaction" />
+        android:icon="@drawable/trnasaksi" />
     <item
         android:id="@+id/account"
         android:title="Account"
-        android:icon="@drawable/icon_account" />
+        android:icon="@drawable/profil" />
 
 </menu>

@@ -92,7 +92,7 @@
 
     <include layout="@layout/content_details"/>
 
-    <com.google.android.flexbox.FlexboxLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_gravity="bottom"
         android:background="@color/white"
@@ -112,6 +112,6 @@
                 android:layout_margin="7dp"
                 android:layout_height="wrap_content"/>
         </androidx.cardview.widget.CardView>
-    </com.google.android.flexbox.FlexboxLayout>
+    </FrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
