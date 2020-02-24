@@ -249,6 +249,10 @@ public class PageOrders  extends AppCompatActivity {
                     JSONObject feedback = jsonObject.getJSONObject(FEEDBACK);
                     ulasan.setText(feedback.getString(KOMEN));
                     star.setRating(Float.valueOf(feedback.getString(RATING)));
+                    star.setEnabled(false);
+                } else {
+                    star.setVisibility(View.GONE);
+                    ulasan.setText("Tidak ada ulasan.");
                 }
 
                 fotobukti = bukti.getString(URL_BUKTI_TRANSAKSI);

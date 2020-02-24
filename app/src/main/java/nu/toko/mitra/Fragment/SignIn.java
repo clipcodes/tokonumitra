@@ -43,7 +43,7 @@ public class SignIn extends Fragment {
     ProgressBar progress;
     KirimData kirimData;
     RequestQueue requestQueue;
-    SignInButton google;
+//    SignInButton google;
 
     public SignIn() {
     }
@@ -78,7 +78,7 @@ public class SignIn extends Fragment {
     }
 
     void init(View view){
-        google = view.findViewById(R.id.google);
+//        google = view.findViewById(R.id.google);
         requestQueue = Volley.newRequestQueue(getActivity());
         email = view.findViewById(R.id.email);
         pass = view.findViewById(R.id.password);
@@ -87,12 +87,12 @@ public class SignIn extends Fragment {
         gotex = view.findViewById(R.id.gotex);
         err = view.findViewById(R.id.err);
 
-        google.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                kirimData.trigerhome();
-            }
-        });
+//        google.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                kirimData.trigerhome();
+//            }
+//        });
     }
 
     void go(boolean go){

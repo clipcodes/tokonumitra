@@ -43,7 +43,9 @@ import static nu.toko.mitra.Utils.Staticvar.ID_PEMBELI;
 import static nu.toko.mitra.Utils.Staticvar.ID_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.ID_TRANSAKSI;
 import static nu.toko.mitra.Utils.Staticvar.NAMA_PRODUK;
+import static nu.toko.mitra.Utils.Staticvar.PRODUCTMITRA;
 import static nu.toko.mitra.Utils.Staticvar.RESI;
+import static nu.toko.mitra.Utils.Staticvar.SLASH;
 import static nu.toko.mitra.Utils.Staticvar.STATUS_TRANSAKSI;
 import static nu.toko.mitra.Utils.Staticvar.SUB_TOTAL;
 import static nu.toko.mitra.Utils.Staticvar.TGL_PEMESANAN;
@@ -57,6 +59,12 @@ public class TransactionNU extends Fragment {
     List<BillingModelNU> billingModels;
     RequestQueue requestQueue;
     View roots;
+    FrameLayout aktif, selesai, dibatalkan;
+    View inlineaktif, inlineselesai, inlinebatal;
+    int PAGE = 1;
+    int STATUS = 1;
+    int colorprimary, colorwhite;
+    ReqString reqString;
 
     @Nullable
     @Override
@@ -76,17 +84,32 @@ public class TransactionNU extends Fragment {
         Log.i(TAG, "onStart: "+UserPrefs.getId(getActivity()));
         billingModels.clear();
         groupBillingAdapter.notifyDataSetChanged();
-        new ReqString(getActivity(), requestQueue).go(respontrans, TRANSAKSIMITRA+ UserPrefs.getId(getActivity()));
+        reqString.go(respontrans, TRANSAKSIMITRA+ UserPrefs.getId(getActivity())+SLASH+STATUS);
         super.onStart();
     }
 
     void init(View root){
         requestQueue = Volley.newRequestQueue(getActivity());
+        reqString = new ReqString(getActivity(), requestQueue);
         billingModels = new ArrayList<>();
         rvbill = root.findViewById(R.id.rvbill);
         groupBillingAdapter = new GroupBillingHomeAdapter(getActivity(), billingModels);
         rvbill.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         rvbill.setAdapter(groupBillingAdapter);
+
+        aktif = root.findViewById(R.id.aktif);
+        selesai = root.findViewById(R.id.selesai);
+        dibatalkan = root.findViewById(R.id.dibatalkan);
+        aktif.setOnClickListener(new kliktab());
+        selesai.setOnClickListener(new kliktab());
+        dibatalkan.setOnClickListener(new kliktab());
+
+        colorprimary = getActivity().getResources().getColor(R.color.colorPrimary);
+        colorwhite = getActivity().getResources().getColor(R.color.white);
+
+        inlineaktif = root.findViewById(R.id.inlineaktif);
+        inlineselesai = root.findViewById(R.id.inlineselesai);
+        inlinebatal = root.findViewById(R.id.inlinebatal);
 
         groupBillingAdapter.setOnItemClickListener(new GroupBillingHomeAdapter.OnClick() {
             @Override
@@ -97,6 +120,36 @@ public class TransactionNU extends Fragment {
                 startActivity(i);
             }
         });
+    }
+
+    public class kliktab implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            PAGE = 1;
+            switch (v.getId()){
+                case R.id.aktif:
+                    inlineaktif.setBackgroundColor(colorprimary);
+                    inlineselesai.setBackgroundColor(colorwhite);
+                    inlinebatal.setBackgroundColor(colorwhite);
+                    STATUS = 1;
+                    break;
+                case R.id.selesai:
+                    inlineaktif.setBackgroundColor(colorwhite);
+                    inlineselesai.setBackgroundColor(colorprimary);
+                    inlinebatal.setBackgroundColor(colorwhite);
+                    STATUS = 2;
+                    break;
+                case R.id.dibatalkan:
+                    inlineaktif.setBackgroundColor(colorwhite);
+                    inlineselesai.setBackgroundColor(colorwhite);
+                    inlinebatal.setBackgroundColor(colorprimary);
+                    STATUS = 3;
+                    break;
+            }
+            billingModels.clear();
+            groupBillingAdapter.notifyDataSetChanged();
+            reqString.go(respontrans, TRANSAKSIMITRA+UserPrefs.getId(getActivity())+SLASH+STATUS);
+        }
     }
 
     private Response.Listener<String> respontrans = new Response.Listener<String>() {
@@ -118,8 +171,6 @@ public class TransactionNU extends Fragment {
                     bill.setTgl_pemesanan(jsonObject.getString(TGL_PEMESANAN));
                     bill.setStatus_transaksi(jsonObject.getInt(STATUS_TRANSAKSI));
                     bill.setResi(jsonObject.getString(RESI));
-
-                    Log.i(TAG, "onResponse: S "+jsonObject.getInt(STATUS_TRANSAKSI));
 
                     //Transaksi Item
                     JSONArray item = new JSONArray(jsonObject.getString("item"));

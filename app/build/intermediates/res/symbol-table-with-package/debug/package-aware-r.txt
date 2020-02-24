@@ -1198,6 +1198,7 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable icon
 drawable icon_account
 drawable icon_add
 drawable icon_back
@@ -1349,6 +1350,7 @@ id additional
 id address
 id adjust_height
 id adjust_width
+id aktif
 id alamat
 id alamat_toko_mitra
 id alamatpengiriman
@@ -1440,6 +1442,7 @@ id deskripsi
 id deskripsi_toko_mitra
 id dialog_button
 id dibaca
+id dibatalkan
 id dicline
 id diclineprog
 id diclinetex
@@ -1479,7 +1482,6 @@ id fullname
 id ghost_view
 id go
 id gone
-id google
 id gotex
 id group_divider
 id groups
@@ -1502,6 +1504,9 @@ id indpurchase
 id info
 id infohead
 id informasi
+id inlineaktif
+id inlinebatal
+id inlineselesai
 id inpublished
 id interbaru
 id interlaris
@@ -1676,6 +1681,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id selesai
 id setting
 id shortcut
 id showCustom
@@ -1732,9 +1738,12 @@ id terlaris
 id termahal
 id termurah
 id tex
+id texaktif
+id texbatal
 id texbilling
 id texbut
 id texpurchase
+id texselesai
 id text
 id text2
 id textSpacerNoButtons
@@ -1889,6 +1898,8 @@ layout modelitem_description
 layout modelitem_group
 layout modelitem_groupbill
 layout modelitem_groupbillhome
+layout modelitem_groupbillhome4
+layout modelitem_groupbillhome5
 layout modelitem_groupbillitem
 layout modelitem_images
 layout modelitem_notification
