@@ -78,7 +78,7 @@ public class AddProduct extends AppCompatActivity {
     private static final int REQUEST_WRITE_PERMISSION = 786;
     private static final int KATEGORI = 345;
     private static final int SUBKATEGORI = 3235;
-    EditText nama, deskripsi, harga, stok, berat, diskon;
+    EditText nama, deskripsi, harga, stok, berat;
     String kondisiselect, kategoriselect, subkategoriselect;
     TextView kategoritex, subkategoritex;
     FrameLayout kategori, subkategori;
@@ -124,7 +124,6 @@ public class AddProduct extends AppCompatActivity {
         harga.setText(String.valueOf(productModelNU.getHarga_mitra()));
         stok.setText(productModelNU.getStok());
         berat.setText(productModelNU.getBerat_produk());
-        diskon.setText(String.valueOf(productModelNU.getDiskon()));
         subkategori.setVisibility(View.VISIBLE);
         kategoritex.setText("Kategori "+getIntent().getStringExtra(NAMA_KATEGORI));
         subkategoritex.setText("Sub Kategori "+getIntent().getStringExtra("namasubkategori"));
@@ -218,7 +217,6 @@ public class AddProduct extends AppCompatActivity {
         harga = findViewById(R.id.harga);
         stok = findViewById(R.id.stock);
         berat = findViewById(R.id.berat);
-        diskon = findViewById(R.id.diskon);
 
         kategoriselect = "Baru";
         kondisipilihan = new ArrayList<>();
@@ -252,7 +250,6 @@ public class AddProduct extends AppCompatActivity {
                 String hargap = harga.getText().toString();
                 String stokp = stok.getText().toString();
                 String beratp = berat.getText().toString();
-                String diskonp = diskon.getText().toString();
 
                 if (files.size() <= 0 && !edited){
                     err.setText("Tambahkan Foto Produk");
@@ -308,7 +305,6 @@ public class AddProduct extends AppCompatActivity {
                 adds.setKategori(kategoriselect);
                 adds.setSubkategori(subkategoriselect);
                 adds.setStok(stokp);
-                adds.setDiskon(diskonp);
                 adds.setUris(files);
 
                 add.setCardBackgroundColor(getResources().getColor(R.color.white));

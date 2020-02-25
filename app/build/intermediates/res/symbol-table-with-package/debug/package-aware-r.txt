@@ -1457,7 +1457,6 @@ id diclinetex
 id dimensions
 id direct
 id disableHome
-id diskon
 id donestatus
 id dot
 id edit

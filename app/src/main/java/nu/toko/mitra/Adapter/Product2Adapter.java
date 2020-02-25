@@ -131,7 +131,6 @@ public class Product2Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             price = itemView.findViewById(R.id.price);
             thumb = itemView.findViewById(R.id.thumb);
             stock = itemView.findViewById(R.id.stock);
-            diskon = itemView.findViewById(R.id.diskon);
             star = itemView.findViewById(R.id.star);
             namatoko = itemView.findViewById(R.id.namatoko);
             lokasi = itemView.findViewById(R.id.lokasi);
