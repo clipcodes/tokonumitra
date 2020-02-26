@@ -27,6 +27,8 @@ import java.util.Map;
 import nu.toko.mitra.Model.NewProductModel;
 import nu.toko.mitra.Utils.UserPrefs;
 
+import static nu.toko.mitra.Utils.Staticvar.PENGADUAN;
+
 public class ReqString {
 
     String TAG = getClass().getSimpleName();
@@ -163,6 +165,27 @@ public class ReqString {
                 Log.i(TAG, "addproduk: "+e.getMessage());
             }
         }
+        requestQueue.add(smr);
+    }
+
+    public void bantuan(Response.Listener<String> responstatus, String pengaduan){
+        SimpleMultiPartRequest smr = new SimpleMultiPartRequest(Request.Method.POST, PENGADUAN,
+                responstatus, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                if (error instanceof TimeoutError || error instanceof NoConnectionError) {
+                    Log.i("RESPON EROR", "TimeoutError NoConnectionError");
+                } else if (error instanceof ServerError) {
+                    Log.i("RESPON EROR", "ServerError");
+                } else if (error instanceof NetworkError) {
+                    Log.i("RESPON EROR", "NetworkError");
+                } else if (error instanceof ParseError) {
+                    Log.i("RESPON EROR", "ParseError");
+                }
+            }
+        });
+        smr.addStringParam("id_pembeli", UserPrefs.getId(activity));
+        smr.addStringParam("pengaduan", pengaduan);
         requestQueue.add(smr);
     }
 

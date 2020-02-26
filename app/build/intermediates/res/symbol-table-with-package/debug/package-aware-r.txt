@@ -1534,6 +1534,7 @@ id kecamatan_mitra
 id kecamatan_pembeli
 id kembali
 id kembalitolbar
+id kirim
 id kirimpesan
 id kode_pos_mitra
 id kondisi
@@ -1610,6 +1611,7 @@ id paystatus
 id paytex
 id paytotal
 id pencarian
+id pengaduan
 id pengirimanmitra
 id percent
 id pesanan
@@ -1935,6 +1937,7 @@ layout page_accountnew
 layout page_addaddress
 layout page_addproduct
 layout page_address
+layout page_bantuan
 layout page_beranda
 layout page_billing
 layout page_billinghome
