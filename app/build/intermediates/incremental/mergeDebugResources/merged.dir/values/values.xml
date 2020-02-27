@@ -201,7 +201,7 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <color name="colorAccent">#27ae60</color>
+    <color name="colorAccent">#C9F576</color>
     <color name="colorPrimary">#27ae60</color>
     <color name="colorPrimaryDark">#27ae60</color>
     <color name="colorPrimarytranspa">#90D0F8E1</color>
