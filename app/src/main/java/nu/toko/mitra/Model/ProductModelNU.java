@@ -41,6 +41,7 @@ public class ProductModelNU {
     private int diskon;
     private boolean checked;
     private UserMitra owner;
+    private String kategorimitra;
 
     public static final String CREATE_TABLE =
             "CREATE TABLE " + TABLE_NAME + "("
@@ -244,5 +245,13 @@ public class ProductModelNU {
 
     public void setDiskon(int diskon) {
         this.diskon = diskon;
+    }
+
+    public String getKategorimitra() {
+        return kategorimitra;
+    }
+
+    public void setKategorimitra(String kategorimitra) {
+        this.kategorimitra = kategorimitra;
     }
 }

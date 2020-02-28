@@ -1192,6 +1192,7 @@ drawable design_snackbar_background
 drawable dot_background
 drawable examp
 drawable fblogin
+drawable foto_defaul_mitra
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient
@@ -1211,6 +1212,7 @@ drawable icon_chat
 drawable icon_chatcolor
 drawable icon_chatcolorprimary
 drawable icon_checkwhite
+drawable icon_chivleft
 drawable icon_chivronright
 drawable icon_coin
 drawable icon_coinprimary
@@ -1252,6 +1254,9 @@ drawable ikon_notifs
 drawable ikon_send
 drawable ikon_tambah
 drawable ikon_tambahcolor
+drawable intro1
+drawable intro2
+drawable intro3
 drawable logoputih
 drawable logout
 drawable lokasi
@@ -1272,6 +1277,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable officialstore
 drawable profil
 drawable profilepic
 drawable progres
@@ -1279,8 +1285,10 @@ drawable promo1
 drawable pusatbantua
 drawable rounded
 drawable setting
+drawable splash
 drawable spring_dot_background
 drawable spring_dot_stroke_background
+drawable starseller
 drawable stok
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1478,6 +1486,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id filter
+id finish
 id fitCenter
 id fixed
 id flex_end
@@ -1528,6 +1537,7 @@ id jumlahtransfer
 id kabkota
 id kabupaten_mitra
 id kategori
+id kategorimitra
 id kategoritex
 id kec
 id kecamatan_mitra
@@ -1578,6 +1588,7 @@ id navigation_header_container
 id nested
 id nestedscrol
 id never
+id next
 id nik_mitra
 id no_rekening_mitra
 id no_telp_mitra
@@ -1623,6 +1634,7 @@ id pilihkabkot
 id pilihprov
 id pin
 id pos
+id prev
 id price
 id pricediscount
 id productimg
@@ -1754,6 +1766,7 @@ id texaktif
 id texbatal
 id texbilling
 id texbut
+id texkategori
 id texpurchase
 id texselesai
 id text
@@ -1888,6 +1901,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dot_layout
+layout intro_1
+layout intro_2
+layout intro_3
 layout modeitem_product
 layout modeitem_product2
 layout modeitem_product3
@@ -1951,6 +1967,7 @@ layout page_detailbill
 layout page_details
 layout page_editeprofile
 layout page_home
+layout page_introkontainer
 layout page_kategorichooser
 layout page_koinnu
 layout page_kota
@@ -1964,6 +1981,7 @@ layout page_photoview
 layout page_profil
 layout page_prov
 layout page_purchase
+layout page_splash
 layout page_transaction
 layout page_transaksi
 layout select_dialog_item_material

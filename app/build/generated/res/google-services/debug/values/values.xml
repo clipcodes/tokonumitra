@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">534173453620-5l9kc5jncee6dqapmoh5bqtmpmmhgcfg.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://toko-nu.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">534173453620</string>
-    <string name="google_api_key" translatable="false">AIzaSyBziiQDAMcNAjcBfhzJRepIepuARgWCB5Y</string>
-    <string name="google_app_id" translatable="false">1:534173453620:android:3b6db16e6a8561c8d9a961</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBziiQDAMcNAjcBfhzJRepIepuARgWCB5Y</string>
-    <string name="google_storage_bucket" translatable="false">toko-nu.appspot.com</string>
-    <string name="project_id" translatable="false">toko-nu</string>
+    <string name="default_web_client_id" translatable="false">279120662150-dh7eb66rdj41q112un86lkh00fqcoemi.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://tokon-u.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">279120662150</string>
+    <string name="google_api_key" translatable="false">AIzaSyC9LN3RVogw-tQIEMcOCkbdZatIEH2geq4</string>
+    <string name="google_app_id" translatable="false">1:279120662150:android:178550e38bd989217e0b07</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC9LN3RVogw-tQIEMcOCkbdZatIEH2geq4</string>
+    <string name="google_storage_bucket" translatable="false">tokon-u.appspot.com</string>
+    <string name="project_id" translatable="false">tokon-u</string>
 </resources>

@@ -18,7 +18,7 @@ public class PageAdapter extends FragmentPagerAdapter {
         super(manager);
     }
 
-    public void Add(Fragment fragment){
+    public void Tambai(Fragment fragment){
         fragments.add(fragment);
     }
 
