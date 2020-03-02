@@ -128,7 +128,7 @@ public class PhotoAddAdap extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         }
 
         public void init(final int position, PhotoModel photoModel){
-            image.setImageURI(photoModel.getUri());
+            image.setImageBitmap(photoModel.getBitmap());
             delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

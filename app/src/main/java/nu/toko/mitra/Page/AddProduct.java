@@ -29,6 +29,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.NetworkResponse;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
@@ -41,8 +42,10 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import nu.toko.mitra.Adapter.PhotoAddAdap;
 import nu.toko.mitra.Adapter.Product2Adapter;
@@ -52,10 +55,12 @@ import nu.toko.mitra.Model.ProductModelNU;
 import nu.toko.mitra.R;
 import nu.toko.mitra.Reqs.ReqString;
 
+import static nu.toko.mitra.Utils.Staticvar.BAYAR;
 import static nu.toko.mitra.Utils.Staticvar.BERAT_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.DESCRIPTION;
 import static nu.toko.mitra.Utils.Staticvar.DESKRIPSI_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.DISKON;
+import static nu.toko.mitra.Utils.Staticvar.FOTOPRODUKUPLOAD;
 import static nu.toko.mitra.Utils.Staticvar.HARGA_MITRA;
 import static nu.toko.mitra.Utils.Staticvar.ID_KATEGORI;
 import static nu.toko.mitra.Utils.Staticvar.ID_MITRA;
@@ -92,6 +97,7 @@ public class AddProduct extends AppCompatActivity {
     String gambararr;
     String deletedimage = "";
     boolean edited = false;
+    NewProductModel adds;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -183,7 +189,7 @@ public class AddProduct extends AppCompatActivity {
 
             @Override
             public void deleteefit(int pos, String url) {
-                deletedimage = deletedimage + url + "-";
+                deletedimage = deletedimage + url + "=";
                 Log.i(TAG, "deleteefit: "+deletedimage.substring(0, deletedimage.length()-1));
                 files.remove(pos);
                 photoAddAdap.notifyDataSetChanged();
@@ -296,7 +302,7 @@ public class AddProduct extends AppCompatActivity {
                     return;
                 }
 
-                NewProductModel adds = new NewProductModel();
+                adds = new NewProductModel();
                 adds.setNama(namap);
                 adds.setDeskripsi(deskripsip);
                 adds.setBerat(beratp);
@@ -332,6 +338,29 @@ public class AddProduct extends AppCompatActivity {
         });
     }
 
+    Intent ix = null;
+    ArrayList<Bitmap> bitmapedit;
+    int count = 0;
+    public Response.Listener<NetworkResponse> fotorespon = new Response.Listener<NetworkResponse>() {
+        @Override
+        public void onResponse(NetworkResponse response) {
+
+            if (edited){
+                count=+1;
+                if (bitmapedit.size()==count){
+                    startActivity(ix);
+                    finish();
+                }
+            } else {
+                count=+1;
+                if (adds.getUris().size()==count){
+                    startActivity(ix);
+                    finish();
+                }
+            }
+        }
+    };
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -343,13 +372,22 @@ public class AddProduct extends AppCompatActivity {
             Log.i(TAG, "onResponse: "+response);
             try {
                 JSONObject object = new JSONObject(response);
-                Intent i = new Intent(getApplicationContext(), Details.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |  Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                i.putExtra(ID_PRODUK, object.getString(ID_PRODUK));
-                i.putExtra(HARGA_MITRA, object.getString(HARGA_MITRA));
-                i.putExtra(NAMA_PRODUK, object.getString(NAMA_PRODUK));
-                startActivity(i);
-                finish();
+                ix = new Intent(getApplicationContext(), Details.class);
+                ix.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |  Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                ix.putExtra(ID_PRODUK, object.getString(ID_PRODUK));
+                ix.putExtra(HARGA_MITRA, object.getInt(HARGA_MITRA));
+                ix.putExtra(NAMA_PRODUK, object.getString(NAMA_PRODUK));
+                if (adds.getUris().size()<=0){
+                    startActivity(ix);
+                    finish();
+                } else {
+                    for (int x = 0; x < adds.getUris().size(); x++){
+                        String[] uuid = UUID.randomUUID().toString().split("-");
+                        new ReqString(AddProduct.this, requestQueue).foto(
+                                object.getString(ID_PRODUK)+"-"+uuid[0], adds.getUris().get(x).getBitmap(), fotorespon, FOTOPRODUKUPLOAD
+                        );
+                    }
+                }
             } catch (JSONException e){
                 Log.i(TAG, "onResponse: "+e.getMessage());
             }
@@ -362,13 +400,30 @@ public class AddProduct extends AppCompatActivity {
             Log.i(TAG, "onResponse: "+response);
             try {
                 JSONObject object = new JSONObject(response);
-                Intent i = new Intent(getApplicationContext(), Details.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |  Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                i.putExtra(ID_PRODUK, object.getString(ID_PRODUK));
-                i.putExtra(HARGA_MITRA, object.getString(HARGA_MITRA));
-                i.putExtra(NAMA_PRODUK, object.getString(NAMA_PRODUK));
-                startActivity(i);
-                finish();
+                ix = new Intent(getApplicationContext(), Details.class);
+                ix.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |  Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                ix.putExtra(ID_PRODUK, object.getString(ID_PRODUK));
+                ix.putExtra(HARGA_MITRA, object.getInt(HARGA_MITRA));
+                ix.putExtra(NAMA_PRODUK, object.getString(NAMA_PRODUK));
+
+                bitmapedit = new ArrayList<>();
+                for (int i = 0; i < adds.getUris().size(); i++){
+                    if (adds.getUris().get(i).getBitmap()!=null){
+                        bitmapedit.add(adds.getUris().get(i).getBitmap());
+                    }
+                }
+
+                if (bitmapedit.size()<=0){
+                    startActivity(ix);
+                    finish();
+                } else {
+                    for (int x = 0; x < bitmapedit.size(); x++){
+                        String[] uuid = UUID.randomUUID().toString().split("-");
+                        new ReqString(AddProduct.this, requestQueue).foto(
+                                object.getString(ID_PRODUK)+"-"+uuid[0], bitmapedit.get(x), fotorespon, FOTOPRODUKUPLOAD
+                        );
+                    }
+                }
             } catch (JSONException e){
                 Log.i(TAG, "onResponse: "+e.getMessage());
             }
@@ -407,8 +462,13 @@ public class AddProduct extends AppCompatActivity {
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
-                files.add(new PhotoModel(result.getUri()));
-                photoAddAdap.notifyDataSetChanged();
+                try {
+                    Bitmap foto = MediaStore.Images.Media.getBitmap(getContentResolver(), result.getUri());
+                    files.add(new PhotoModel(foto));
+                    photoAddAdap.notifyDataSetChanged();
+                } catch (Exception e){
+                    Log.i("Catch", e.getMessage());
+                }
             }
         }
 

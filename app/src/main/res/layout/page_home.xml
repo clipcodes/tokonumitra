@@ -146,7 +146,7 @@
             android:layout_height="25dp"/>
         <TextView
             android:layout_width="wrap_content"
-            android:text="Tidak Ada Transaksi"
+            android:text="Tidak Ada Data"
             android:layout_marginTop="10dp"
             android:textSize="15sp"
             android:layout_height="wrap_content"/>

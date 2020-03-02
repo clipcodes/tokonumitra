@@ -119,6 +119,11 @@ public class SignIn extends Fragment {
                     go(false);
                     return;
                 }
+                if (object.getString("status_mitra").equals("0")){
+                    err.setText("Akun Ini Tidak Aktif");
+                    go(false);
+                    return;
+                }
                 UserPrefs.setLogin(getActivity(), true);
                 UserPrefs.setId(object.getString("id_mitra"), getActivity());
                 UserPrefs.setAlamat_toko(object.getString("alamat_toko_mitra"), getActivity());

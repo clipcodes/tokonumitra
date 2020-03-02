@@ -53,473 +53,472 @@
 28-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:14:9-54
 29        android:supportsRtl="true"
 29-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:17:9-35
-30        android:testOnly="true"
-31        android:theme="@style/AppTheme"
-31-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:20:9-40
-32        android:usesCleartextTraffic="true" >
-32-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:18:9-44
-33        <service
-33-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:21:9-29:19
-34            android:name="nu.toko.mitra.Notifikasi.MyFirebaseMessagingService"
-34-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:22:13-66
-35            android:exported="false" >
-35-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:23:13-37
-36            <intent-filter>
-36-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:24:13-28:29
-37                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-37-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:17-81
-37-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:25-78
-38                <action android:name="com.google.android.gms.iid.InstanceID" />
-38-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:26:17-80
-38-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:26:25-77
-39                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-39-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:17-78
-39-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:25-75
-40            </intent-filter>
-41        </service>
-42
-43        <activity
-43-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:30:9-40:20
-44            android:name="nu.toko.mitra.Splash"
-44-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:31:13-35
-45            android:label="@string/app_name"
-45-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:33:13-45
-46            android:screenOrientation="portrait"
-46-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:32:13-49
-47            android:theme="@style/AppTheme.NoActionBar" >
-47-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:34:13-56
-48            <intent-filter>
-48-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:35:13-39:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:36:17-69
-49-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:36:25-66
-50                <action android:name="android.intent.action.VIEW" />
-50-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:37:17-69
-50-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:37:25-66
-51
-52                <category android:name="android.intent.category.LAUNCHER" />
-52-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:38:17-77
-52-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:38:27-74
-53            </intent-filter>
-54        </activity>
-55        <activity
-55-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:41:9-42:52
-56            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-56-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:41:19-82
-57            android:screenOrientation="portrait" />
-57-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:42:13-49
-58        <activity
-58-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:43:9-45:58
-59            android:name="nu.toko.mitra.Page.Login"
-59-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:43:19-45
-60            android:screenOrientation="portrait"
-60-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:44:13-49
-61            android:theme="@style/AppTheme.NoActionBar" />
-61-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:45:13-56
-62        <activity
-62-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:46:9-48:58
-63            android:name="nu.toko.mitra.Intro"
-63-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:46:19-40
-64            android:screenOrientation="portrait"
-64-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:47:13-49
-65            android:theme="@style/AppTheme.NoActionBar" />
-65-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:48:13-56
-66        <activity
-66-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:49:9-51:58
-67            android:name="nu.toko.mitra.MainActivity"
-67-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:49:19-47
-68            android:screenOrientation="portrait"
-68-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:50:13-49
-69            android:theme="@style/AppTheme.NoActionBar" />
-69-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:51:13-56
-70        <activity
-70-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:52:9-54:58
-71            android:name="nu.toko.mitra.Page.Details"
-71-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:52:19-47
-72            android:screenOrientation="portrait"
-72-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:53:13-49
-73            android:theme="@style/AppTheme.NoActionBar" />
-73-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:54:13-56
-74        <activity
-74-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:55:9-57:58
-75            android:name="nu.toko.mitra.Page.Categories"
-75-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:55:19-50
-76            android:screenOrientation="portrait"
-76-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:56:13-49
-77            android:theme="@style/AppTheme.NoActionBar" />
-77-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:57:13-56
-78        <activity
-78-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:58:9-60:58
-79            android:name="nu.toko.mitra.Page.CartOrder"
-79-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:58:19-49
-80            android:screenOrientation="portrait"
-80-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:59:13-49
-81            android:theme="@style/AppTheme.NoActionBar" />
-81-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:60:13-56
-82        <activity
-82-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:61:9-63:58
-83            android:name="nu.toko.mitra.Page.Checkout"
-83-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:61:19-48
-84            android:screenOrientation="portrait"
-84-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:62:13-49
-85            android:theme="@style/AppTheme.NoActionBar" />
-85-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:63:13-56
-86        <activity
-86-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:64:9-66:58
-87            android:name="nu.toko.mitra.Page.UserSetting"
-87-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:64:19-51
-88            android:screenOrientation="portrait"
-88-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:65:13-49
-89            android:theme="@style/AppTheme.NoActionBar" />
-89-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:66:13-56
-90        <activity
-90-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:67:9-69:58
-91            android:name="nu.toko.mitra.Page.DetailPayment"
-91-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:67:19-53
-92            android:screenOrientation="portrait"
-92-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:68:13-49
-93            android:theme="@style/AppTheme.NoActionBar" />
-93-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:69:13-56
-94        <activity
-94-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:70:9-72:58
-95            android:name="nu.toko.mitra.Page.PageAddress"
-95-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:70:19-51
-96            android:screenOrientation="portrait"
-96-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:71:13-49
-97            android:theme="@style/AppTheme.NoActionBar" />
-97-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:72:13-56
-98        <activity
-98-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:73:9-75:58
-99            android:name="nu.toko.mitra.Page.AddPageAddress"
-99-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:73:19-54
-100            android:screenOrientation="portrait"
-100-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:74:13-49
-101            android:theme="@style/AppTheme.NoActionBar" />
-101-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:75:13-56
-102        <activity
-102-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:76:9-78:58
-103            android:name="nu.toko.mitra.Page.PagePaymentMethod"
-103-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:76:19-57
-104            android:screenOrientation="portrait"
-104-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:77:13-49
-105            android:theme="@style/AppTheme.NoActionBar" />
-105-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:78:13-56
-106        <activity
-106-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:79:9-81:58
-107            android:name="nu.toko.mitra.Page.PagePay"
-107-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:79:19-47
-108            android:screenOrientation="portrait"
-108-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:80:13-49
-109            android:theme="@style/AppTheme.NoActionBar" />
-109-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:81:13-56
-110        <activity
-110-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:82:9-84:58
-111            android:name="nu.toko.mitra.Page.Billing"
-111-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:82:19-47
-112            android:screenOrientation="portrait"
-112-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:83:13-49
-113            android:theme="@style/AppTheme.NoActionBar" />
-113-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:84:13-56
-114        <activity
-114-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:85:9-87:58
-115            android:name="nu.toko.mitra.Page.PageOrders"
-115-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:85:19-50
-116            android:screenOrientation="portrait"
-116-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:86:13-49
-117            android:theme="@style/AppTheme.NoActionBar" />
-117-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:87:13-56
-118        <activity
-118-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:88:9-90:58
-119            android:name="nu.toko.mitra.Page.PagePencarian"
-119-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:88:19-53
-120            android:screenOrientation="portrait"
-120-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:89:13-49
-121            android:theme="@style/AppTheme.NoActionBar" />
-121-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:90:13-56
-122        <activity
-122-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:91:9-93:58
-123            android:name="nu.toko.mitra.Page.PagePhotoView"
-123-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:91:19-53
-124            android:screenOrientation="portrait"
-124-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:92:13-49
-125            android:theme="@style/AppTheme.NoActionBar" />
-125-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:93:13-56
-126        <activity
-126-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:94:9-96:58
-127            android:name="nu.toko.mitra.Page.AddProduct"
-127-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:94:19-50
-128            android:screenOrientation="portrait"
-128-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:95:13-49
-129            android:theme="@style/AppTheme.NoActionBar" />
-129-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:96:13-56
-130        <activity
-130-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:97:9-99:58
-131            android:name="nu.toko.mitra.Page.KategoriChooser"
-131-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:97:19-55
-132            android:screenOrientation="portrait"
-132-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:98:13-49
-133            android:theme="@style/AppTheme.NoActionBar" />
-133-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:99:13-56
-134        <activity
-134-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:100:9-102:58
-135            android:name="nu.toko.mitra.Page.SubKategoriChooser"
-135-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:100:19-58
-136            android:screenOrientation="portrait"
-136-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:101:13-49
-137            android:theme="@style/AppTheme.NoActionBar" />
-137-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:102:13-56
-138        <activity
-138-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:103:9-105:58
-139            android:name="nu.toko.mitra.Page.Chats"
-139-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:103:19-45
-140            android:screenOrientation="portrait"
-140-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:104:13-49
-141            android:theme="@style/AppTheme.NoActionBar" />
-141-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:105:13-56
-142        <activity
-142-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:106:9-108:58
-143            android:name="nu.toko.mitra.Page.ChatRoom"
-143-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:106:19-48
-144            android:screenOrientation="portrait"
-144-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:107:13-49
-145            android:theme="@style/AppTheme.NoActionBar" />
-145-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:108:13-56
-146        <activity
-146-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:109:9-111:58
-147            android:name="nu.toko.mitra.Page.PageProv"
-147-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:109:19-48
-148            android:screenOrientation="portrait"
-148-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:110:13-49
-149            android:theme="@style/AppTheme.NoActionBar" />
-149-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:111:13-56
-150        <activity
-150-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:112:9-114:58
-151            android:name="nu.toko.mitra.Page.PageKota"
-151-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:112:19-48
-152            android:screenOrientation="portrait"
-152-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:113:13-49
-153            android:theme="@style/AppTheme.NoActionBar" />
-153-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:114:13-56
-154        <activity
-154-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
-155            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-155-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
-156            android:excludeFromRecents="true"
-156-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
-157            android:exported="true"
-157-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
-158            android:launchMode="singleTask"
-158-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
-159            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-159-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
-160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-160-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
-161
-162        <service
-162-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
-163            android:name="com.google.firebase.components.ComponentDiscoveryService"
-163-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
-164            android:directBootAware="true"
-164-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-165            android:exported="false" >
-165-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
-166            <meta-data
-166-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
-167                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-167-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
-168                android:value="com.google.firebase.components.ComponentRegistrar" />
-168-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
-169            <meta-data
-169-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
-170                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-170-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
-171                android:value="com.google.firebase.components.ComponentRegistrar" />
-171-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
-172            <meta-data
-172-->[com.google.firebase:firebase-database:19.2.1] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\40d203d0674822dbdfc1bb4103e3a3d4\firebase-database-19.2.1\AndroidManifest.xml:32:13-34:85
-173                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-173-->[com.google.firebase:firebase-database:19.2.1] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\40d203d0674822dbdfc1bb4103e3a3d4\firebase-database-19.2.1\AndroidManifest.xml:33:17-109
-174                android:value="com.google.firebase.components.ComponentRegistrar" />
-174-->[com.google.firebase:firebase-database:19.2.1] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\40d203d0674822dbdfc1bb4103e3a3d4\firebase-database-19.2.1\AndroidManifest.xml:34:17-82
-175            <meta-data
-175-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:30:13-32:85
-176                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-176-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:31:17-139
-177                android:value="com.google.firebase.components.ComponentRegistrar" />
-177-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:32:17-82
-178            <meta-data
-178-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
-179                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-179-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
-180                android:value="com.google.firebase.components.ComponentRegistrar" />
-180-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
-181            <meta-data
-181-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
-182                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-182-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
-183                android:value="com.google.firebase.components.ComponentRegistrar" />
-183-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
-184        </service>
-185
-186        <activity
-186-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
-187            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-187-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
-188            android:excludeFromRecents="true"
-188-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
-189            android:exported="false"
-189-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
-190            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-190-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
-191        <!--
-192            Service handling Google Sign-In user revocation. For apps that do not integrate with
-193            Google Sign-In, this service will never be started.
-194        -->
-195        <service
-195-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
-196            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-196-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
-197            android:exported="true"
-197-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
-198            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-198-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
-199        <!--
-200             FirebaseMessagingService performs security checks at runtime,
-201             but set to not exported to explicitly avoid allowing another app to call it.
-202        -->
-203        <service
-203-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
-204            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-204-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
-205            android:exported="false" >
-205-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
-206            <intent-filter android:priority="-500" >
-206-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:31:13-33:29
-206-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:31:28-51
-207                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-207-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:17-78
-207-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:25-75
-208            </intent-filter>
-209        </service>
-210
-211        <receiver
-211-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
-212            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-212-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
-213            android:exported="true"
-213-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
-214            android:permission="com.google.android.c2dm.permission.SEND" >
-214-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
-215            <intent-filter>
-215-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
-216                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-216-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:17-81
-216-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:25-78
-217            </intent-filter>
-218        </receiver>
-219
-220        <activity
-220-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-221            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-221-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-222            android:exported="false"
-222-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-223            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-223-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-224
-225        <provider
-225-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-226            android:name="com.google.firebase.provider.FirebaseInitProvider"
-226-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-227            android:authorities="nu.toko.mitra.firebaseinitprovider"
-227-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-228            android:exported="false"
-228-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-229            android:initOrder="100" />
-229-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-230
-231        <receiver
-231-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:29:9-33:20
-232            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-232-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:30:13-85
-233            android:enabled="true"
-233-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:31:13-35
-234            android:exported="false" >
-234-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:32:13-37
-235        </receiver>
-236        <receiver
-236-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:34:9-42:20
-237            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-237-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:35:13-100
-238            android:enabled="true"
-238-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:36:13-35
-239            android:exported="true"
-239-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:37:13-36
-240            android:permission="android.permission.INSTALL_PACKAGES" >
-240-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:38:13-69
-241            <intent-filter>
-241-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:39:13-41:29
-242                <action android:name="com.android.vending.INSTALL_REFERRER" />
-242-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:40:17-79
-242-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:40:25-76
-243            </intent-filter>
-244        </receiver>
-245
-246        <service
-246-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:44:9-47:40
-247            android:name="com.google.android.gms.measurement.AppMeasurementService"
-247-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:45:13-84
-248            android:enabled="true"
-248-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:46:13-35
-249            android:exported="false" />
-249-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:47:13-37
-250        <service
-250-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:48:9-52:72
-251            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-251-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:49:13-87
-252            android:enabled="true"
-252-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:50:13-35
-253            android:exported="false"
-253-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:51:13-37
-254            android:permission="android.permission.BIND_JOB_SERVICE" />
-254-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:52:13-69
-255
-256        <meta-data
-256-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\4e1b43fd265ec6b6f215d40b36d9df2f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-257            android:name="com.google.android.gms.version"
-257-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\4e1b43fd265ec6b6f215d40b36d9df2f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-258            android:value="@integer/google_play_services_version" />
-258-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\4e1b43fd265ec6b6f215d40b36d9df2f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-259
-260        <service
-260-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
-261            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-261-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
-262            android:exported="false" >
-262-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
-263            <meta-data
-263-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
-264                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-264-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
-265                android:value="cct" />
-265-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
-266        </service>
-267        <service
-267-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
-268            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-268-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
-269            android:exported="false"
-269-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
-270            android:permission="android.permission.BIND_JOB_SERVICE" >
-270-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
-271        </service>
-272
-273        <receiver
-273-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
-274            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-274-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
-275            android:exported="false" />
-275-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
-276    </application>
-277
-278</manifest>
+30        android:theme="@style/AppTheme"
+30-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:20:9-40
+31        android:usesCleartextTraffic="true" >
+31-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:18:9-44
+32        <service
+32-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:21:9-29:19
+33            android:name="nu.toko.mitra.Notifikasi.MyFirebaseMessagingService"
+33-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:22:13-66
+34            android:exported="false" >
+34-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:23:13-37
+35            <intent-filter>
+35-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:24:13-28:29
+36                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+36-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:17-81
+36-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:25-78
+37                <action android:name="com.google.android.gms.iid.InstanceID" />
+37-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:26:17-80
+37-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:26:25-77
+38                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+38-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:17-78
+38-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:25-75
+39            </intent-filter>
+40        </service>
+41
+42        <activity
+42-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:30:9-40:20
+43            android:name="nu.toko.mitra.Splash"
+43-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:31:13-35
+44            android:label="@string/app_name"
+44-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:33:13-45
+45            android:screenOrientation="portrait"
+45-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:32:13-49
+46            android:theme="@style/AppTheme.NoActionBar" >
+46-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:34:13-56
+47            <intent-filter>
+47-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:35:13-39:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:36:17-69
+48-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:36:25-66
+49                <action android:name="android.intent.action.VIEW" />
+49-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:37:17-69
+49-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:37:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:38:17-77
+51-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:38:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:41:9-42:52
+55            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+55-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:41:19-82
+56            android:screenOrientation="portrait" />
+56-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:42:13-49
+57        <activity
+57-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:43:9-45:58
+58            android:name="nu.toko.mitra.Page.Login"
+58-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:43:19-45
+59            android:screenOrientation="portrait"
+59-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:44:13-49
+60            android:theme="@style/AppTheme.NoActionBar" />
+60-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:45:13-56
+61        <activity
+61-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:46:9-48:58
+62            android:name="nu.toko.mitra.Intro"
+62-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:46:19-40
+63            android:screenOrientation="portrait"
+63-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:47:13-49
+64            android:theme="@style/AppTheme.NoActionBar" />
+64-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:48:13-56
+65        <activity
+65-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:49:9-51:58
+66            android:name="nu.toko.mitra.MainActivity"
+66-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:49:19-47
+67            android:screenOrientation="portrait"
+67-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:50:13-49
+68            android:theme="@style/AppTheme.NoActionBar" />
+68-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:51:13-56
+69        <activity
+69-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:52:9-54:58
+70            android:name="nu.toko.mitra.Page.Details"
+70-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:52:19-47
+71            android:screenOrientation="portrait"
+71-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:53:13-49
+72            android:theme="@style/AppTheme.NoActionBar" />
+72-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:54:13-56
+73        <activity
+73-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:55:9-57:58
+74            android:name="nu.toko.mitra.Page.Categories"
+74-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:55:19-50
+75            android:screenOrientation="portrait"
+75-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:56:13-49
+76            android:theme="@style/AppTheme.NoActionBar" />
+76-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:57:13-56
+77        <activity
+77-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:58:9-60:58
+78            android:name="nu.toko.mitra.Page.CartOrder"
+78-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:58:19-49
+79            android:screenOrientation="portrait"
+79-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:59:13-49
+80            android:theme="@style/AppTheme.NoActionBar" />
+80-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:60:13-56
+81        <activity
+81-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:61:9-63:58
+82            android:name="nu.toko.mitra.Page.Checkout"
+82-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:61:19-48
+83            android:screenOrientation="portrait"
+83-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:62:13-49
+84            android:theme="@style/AppTheme.NoActionBar" />
+84-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:63:13-56
+85        <activity
+85-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:64:9-66:58
+86            android:name="nu.toko.mitra.Page.UserSetting"
+86-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:64:19-51
+87            android:screenOrientation="portrait"
+87-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:65:13-49
+88            android:theme="@style/AppTheme.NoActionBar" />
+88-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:66:13-56
+89        <activity
+89-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:67:9-69:58
+90            android:name="nu.toko.mitra.Page.DetailPayment"
+90-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:67:19-53
+91            android:screenOrientation="portrait"
+91-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:68:13-49
+92            android:theme="@style/AppTheme.NoActionBar" />
+92-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:69:13-56
+93        <activity
+93-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:70:9-72:58
+94            android:name="nu.toko.mitra.Page.PageAddress"
+94-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:70:19-51
+95            android:screenOrientation="portrait"
+95-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:71:13-49
+96            android:theme="@style/AppTheme.NoActionBar" />
+96-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:72:13-56
+97        <activity
+97-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:73:9-75:58
+98            android:name="nu.toko.mitra.Page.AddPageAddress"
+98-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:73:19-54
+99            android:screenOrientation="portrait"
+99-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:74:13-49
+100            android:theme="@style/AppTheme.NoActionBar" />
+100-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:75:13-56
+101        <activity
+101-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:76:9-78:58
+102            android:name="nu.toko.mitra.Page.PagePaymentMethod"
+102-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:76:19-57
+103            android:screenOrientation="portrait"
+103-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:77:13-49
+104            android:theme="@style/AppTheme.NoActionBar" />
+104-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:78:13-56
+105        <activity
+105-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:79:9-81:58
+106            android:name="nu.toko.mitra.Page.PagePay"
+106-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:79:19-47
+107            android:screenOrientation="portrait"
+107-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:80:13-49
+108            android:theme="@style/AppTheme.NoActionBar" />
+108-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:81:13-56
+109        <activity
+109-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:82:9-84:58
+110            android:name="nu.toko.mitra.Page.Billing"
+110-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:82:19-47
+111            android:screenOrientation="portrait"
+111-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:83:13-49
+112            android:theme="@style/AppTheme.NoActionBar" />
+112-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:84:13-56
+113        <activity
+113-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:85:9-87:58
+114            android:name="nu.toko.mitra.Page.PageOrders"
+114-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:85:19-50
+115            android:screenOrientation="portrait"
+115-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:86:13-49
+116            android:theme="@style/AppTheme.NoActionBar" />
+116-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:87:13-56
+117        <activity
+117-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:88:9-90:58
+118            android:name="nu.toko.mitra.Page.PagePencarian"
+118-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:88:19-53
+119            android:screenOrientation="portrait"
+119-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:89:13-49
+120            android:theme="@style/AppTheme.NoActionBar" />
+120-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:90:13-56
+121        <activity
+121-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:91:9-93:58
+122            android:name="nu.toko.mitra.Page.PagePhotoView"
+122-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:91:19-53
+123            android:screenOrientation="portrait"
+123-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:92:13-49
+124            android:theme="@style/AppTheme.NoActionBar" />
+124-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:93:13-56
+125        <activity
+125-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:94:9-96:58
+126            android:name="nu.toko.mitra.Page.AddProduct"
+126-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:94:19-50
+127            android:screenOrientation="portrait"
+127-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:95:13-49
+128            android:theme="@style/AppTheme.NoActionBar" />
+128-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:96:13-56
+129        <activity
+129-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:97:9-99:58
+130            android:name="nu.toko.mitra.Page.KategoriChooser"
+130-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:97:19-55
+131            android:screenOrientation="portrait"
+131-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:98:13-49
+132            android:theme="@style/AppTheme.NoActionBar" />
+132-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:99:13-56
+133        <activity
+133-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:100:9-102:58
+134            android:name="nu.toko.mitra.Page.SubKategoriChooser"
+134-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:100:19-58
+135            android:screenOrientation="portrait"
+135-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:101:13-49
+136            android:theme="@style/AppTheme.NoActionBar" />
+136-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:102:13-56
+137        <activity
+137-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:103:9-105:58
+138            android:name="nu.toko.mitra.Page.Chats"
+138-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:103:19-45
+139            android:screenOrientation="portrait"
+139-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:104:13-49
+140            android:theme="@style/AppTheme.NoActionBar" />
+140-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:105:13-56
+141        <activity
+141-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:106:9-108:58
+142            android:name="nu.toko.mitra.Page.ChatRoom"
+142-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:106:19-48
+143            android:screenOrientation="portrait"
+143-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:107:13-49
+144            android:theme="@style/AppTheme.NoActionBar" />
+144-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:108:13-56
+145        <activity
+145-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:109:9-111:58
+146            android:name="nu.toko.mitra.Page.PageProv"
+146-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:109:19-48
+147            android:screenOrientation="portrait"
+147-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:110:13-49
+148            android:theme="@style/AppTheme.NoActionBar" />
+148-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:111:13-56
+149        <activity
+149-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:112:9-114:58
+150            android:name="nu.toko.mitra.Page.PageKota"
+150-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:112:19-48
+151            android:screenOrientation="portrait"
+151-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:113:13-49
+152            android:theme="@style/AppTheme.NoActionBar" />
+152-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:114:13-56
+153        <activity
+153-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+154            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+154-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+155            android:excludeFromRecents="true"
+155-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+156            android:exported="true"
+156-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+157            android:launchMode="singleTask"
+157-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+158            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+158-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+159            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+159-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+160
+161        <service
+161-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+162            android:name="com.google.firebase.components.ComponentDiscoveryService"
+162-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+163            android:directBootAware="true"
+163-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+164            android:exported="false" >
+164-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
+165            <meta-data
+165-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+166                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+166-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+168            <meta-data
+168-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+169                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+169-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+170                android:value="com.google.firebase.components.ComponentRegistrar" />
+170-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+171            <meta-data
+171-->[com.google.firebase:firebase-database:19.2.1] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\40d203d0674822dbdfc1bb4103e3a3d4\firebase-database-19.2.1\AndroidManifest.xml:32:13-34:85
+172                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+172-->[com.google.firebase:firebase-database:19.2.1] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\40d203d0674822dbdfc1bb4103e3a3d4\firebase-database-19.2.1\AndroidManifest.xml:33:17-109
+173                android:value="com.google.firebase.components.ComponentRegistrar" />
+173-->[com.google.firebase:firebase-database:19.2.1] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\40d203d0674822dbdfc1bb4103e3a3d4\firebase-database-19.2.1\AndroidManifest.xml:34:17-82
+174            <meta-data
+174-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:30:13-32:85
+175                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+175-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:31:17-139
+176                android:value="com.google.firebase.components.ComponentRegistrar" />
+176-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:32:17-82
+177            <meta-data
+177-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+178                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+178-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+179                android:value="com.google.firebase.components.ComponentRegistrar" />
+179-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+180            <meta-data
+180-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+181                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+181-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+182                android:value="com.google.firebase.components.ComponentRegistrar" />
+182-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\e0da70c9258f6893a2373fb18ae7e095\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+183        </service>
+184
+185        <activity
+185-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+186            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+186-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+187            android:excludeFromRecents="true"
+187-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+188            android:exported="false"
+188-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+189            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+189-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+190        <!--
+191            Service handling Google Sign-In user revocation. For apps that do not integrate with
+192            Google Sign-In, this service will never be started.
+193        -->
+194        <service
+194-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+195            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+195-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+196            android:exported="true"
+196-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+197            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+197-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\59706fb0cd949f5b3e2f42e1e02500e1\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+198        <!--
+199             FirebaseMessagingService performs security checks at runtime,
+200             but set to not exported to explicitly avoid allowing another app to call it.
+201        -->
+202        <service
+202-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+203            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+203-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+204            android:exported="false" >
+204-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+205            <intent-filter android:priority="-500" >
+205-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:31:13-33:29
+205-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:31:28-51
+206                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+206-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:17-78
+206-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:25-75
+207            </intent-filter>
+208        </service>
+209
+210        <receiver
+210-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+211            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+211-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+212            android:exported="true"
+212-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+213            android:permission="com.google.android.c2dm.permission.SEND" >
+213-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+214            <intent-filter>
+214-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+215                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+215-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:17-81
+215-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:25-78
+216            </intent-filter>
+217        </receiver>
+218
+219        <activity
+219-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+220            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+220-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+221            android:exported="false"
+221-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+222            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+222-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\6d206c10dfcd7e4d261b33c292c090cb\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+223
+224        <provider
+224-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+225            android:name="com.google.firebase.provider.FirebaseInitProvider"
+225-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+226            android:authorities="nu.toko.mitra.firebaseinitprovider"
+226-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+227            android:exported="false"
+227-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+228            android:initOrder="100" />
+228-->[com.google.firebase:firebase-common:19.3.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\f0c0a3e44d7a55cbb119ebf6e8eeda8f\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+229
+230        <receiver
+230-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:29:9-33:20
+231            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+231-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:30:13-85
+232            android:enabled="true"
+232-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:31:13-35
+233            android:exported="false" >
+233-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:32:13-37
+234        </receiver>
+235        <receiver
+235-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:34:9-42:20
+236            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+236-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:35:13-100
+237            android:enabled="true"
+237-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:36:13-35
+238            android:exported="true"
+238-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:37:13-36
+239            android:permission="android.permission.INSTALL_PACKAGES" >
+239-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:38:13-69
+240            <intent-filter>
+240-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:39:13-41:29
+241                <action android:name="com.android.vending.INSTALL_REFERRER" />
+241-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:40:17-79
+241-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:40:25-76
+242            </intent-filter>
+243        </receiver>
+244
+245        <service
+245-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:44:9-47:40
+246            android:name="com.google.android.gms.measurement.AppMeasurementService"
+246-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:45:13-84
+247            android:enabled="true"
+247-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:46:13-35
+248            android:exported="false" />
+248-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:47:13-37
+249        <service
+249-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:48:9-52:72
+250            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+250-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:49:13-87
+251            android:enabled="true"
+251-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:50:13-35
+252            android:exported="false"
+252-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:51:13-37
+253            android:permission="android.permission.BIND_JOB_SERVICE" />
+253-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:52:13-69
+254
+255        <meta-data
+255-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\4e1b43fd265ec6b6f215d40b36d9df2f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+256            android:name="com.google.android.gms.version"
+256-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\4e1b43fd265ec6b6f215d40b36d9df2f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+257            android:value="@integer/google_play_services_version" />
+257-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\4e1b43fd265ec6b6f215d40b36d9df2f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+258
+259        <service
+259-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+260            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+260-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+261            android:exported="false" >
+261-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+262            <meta-data
+262-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+263                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+263-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+264                android:value="cct" />
+264-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\77181b27b36cb37ae3fc9cbfe9ccb0de\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+265        </service>
+266        <service
+266-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+267            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+267-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+268            android:exported="false"
+268-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+269            android:permission="android.permission.BIND_JOB_SERVICE" >
+269-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+270        </service>
+271
+272        <receiver
+272-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+273            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+273-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+274            android:exported="false" />
+274-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\de57d140c5b40ac4922d63a6d65b36af\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+275    </application>
+276
+277</manifest>

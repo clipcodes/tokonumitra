@@ -1,10 +1,12 @@
 package nu.toko.mitra.Reqs;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.util.Log;
 
 import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -16,7 +18,9 @@ import com.android.volley.error.TimeoutError;
 import com.android.volley.error.VolleyError;
 import com.android.volley.request.SimpleMultiPartRequest;
 import com.android.volley.request.StringRequest;
+import com.android.volley.toolbox.Volley;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -132,8 +136,36 @@ public class ReqString {
         requestQueue.add(smr);
     }
 
-    public void addproduk(Response.Listener<String> responstatus, NewProductModel newProductModel, String url){
-        SimpleMultiPartRequest smr = new SimpleMultiPartRequest(Request.Method.POST, url,
+    public void foto(final String nama, final Bitmap bitmap, Response.Listener<NetworkResponse> res, String url) {
+        VolleyMultipartRequest volleyMultipartRequest = new VolleyMultipartRequest(Request.Method.POST, url, res,
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        if (error instanceof TimeoutError || error instanceof NoConnectionError) {
+                            Log.i("RESPON EROR", "TimeoutError NoConnectionError");
+                        } else if (error instanceof ServerError) {
+                            Log.i("RESPON EROR", "ServerError");
+                        } else if (error instanceof NetworkError) {
+                            Log.i("RESPON EROR", "NetworkError");
+                        } else if (error instanceof ParseError) {
+                            Log.i("RESPON EROR", "ParseError");
+                        }
+                    }
+                })  {
+
+            @Override
+            protected Map<String, DataPart> getByteData() {
+                Map<String, DataPart> params = new HashMap<>();
+                params.put("images", new DataPart(nama + ".jpg", getFileDataFromDrawable(bitmap)));
+                return params;
+            }
+        };
+
+        Volley.newRequestQueue(activity).add(volleyMultipartRequest);
+    }
+
+    public void addproduk(Response.Listener<String> responstatus, final NewProductModel newProductModel, String url){
+        StringRequest smr = new StringRequest(Request.Method.POST, url,
                 responstatus, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
@@ -147,29 +179,29 @@ public class ReqString {
                     Log.i("RESPON EROR", "ParseError");
                 }
             }
-        });
-        smr.addStringParam("id_mitra", UserPrefs.getId(activity));
-        smr.addStringParam("nama_produk", newProductModel.getNama());
-        smr.addStringParam("deskripsi_produk", newProductModel.getDeskripsi());
-        smr.addStringParam("id_sub_kategori", newProductModel.getSubkategori());
-        smr.addStringParam("berat_produk", newProductModel.getBerat());
-        smr.addStringParam("kondisi_produk", newProductModel.getKondisi());
-        smr.addStringParam("diskon", newProductModel.getDiskon());
-        smr.addStringParam("harga_mitra", newProductModel.getHarga());
-        smr.addStringParam("stok", newProductModel.getStok());
-
-        for (int i = 0; i < newProductModel.getUris().size(); i++){
-            try {
-                smr.addFile("image"+i, new File(new URI(newProductModel.getUris().get(i).getUri().toString())).toString());
-            } catch (URISyntaxException e){
-                Log.i(TAG, "addproduk: "+e.getMessage());
-            }
         }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String>  params = new HashMap<>();
+                params.put("id_mitra", UserPrefs.getId(activity));
+                params.put("nama_produk", newProductModel.getNama());
+                params.put("deskripsi_produk", newProductModel.getDeskripsi());
+                params.put("id_sub_kategori",  newProductModel.getSubkategori());
+                params.put("berat_produk", newProductModel.getBerat());
+                params.put("kondisi_produk", newProductModel.getKondisi());
+                params.put("diskon", newProductModel.getDiskon());
+                params.put("harga_mitra", newProductModel.getHarga());
+                params.put("stok", newProductModel.getStok());
+                return params;
+            }
+        };
         requestQueue.add(smr);
     }
 
-    public void bantuan(Response.Listener<String> responstatus, String pengaduan){
-        SimpleMultiPartRequest smr = new SimpleMultiPartRequest(Request.Method.POST, PENGADUAN,
+    public void bantuan(Response.Listener<String> responstatus, final String pengaduan){
+        StringRequest smr = new StringRequest(Request.Method.POST, PENGADUAN,
                 responstatus, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
@@ -183,14 +215,22 @@ public class ReqString {
                     Log.i("RESPON EROR", "ParseError");
                 }
             }
-        });
-        smr.addStringParam("id_pembeli", UserPrefs.getId(activity));
-        smr.addStringParam("pengaduan", pengaduan);
+        }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String>  params = new HashMap<>();
+                params.put("id_pembeli", UserPrefs.getId(activity));
+                params.put("pengaduan", pengaduan);
+                return params;
+            }
+        };
         requestQueue.add(smr);
     }
 
-    public void editproduk(Response.Listener<String> responstatus, NewProductModel newProductModel, String url){
-        SimpleMultiPartRequest smr = new SimpleMultiPartRequest(Request.Method.POST, url,
+    public void editproduk(Response.Listener<String> responstatus, final NewProductModel newProductModel, String url){
+        StringRequest smr = new StringRequest(Request.Method.POST, url,
                 responstatus, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
@@ -204,32 +244,32 @@ public class ReqString {
                     Log.i("RESPON EROR", "ParseError");
                 }
             }
-        });
-        smr.addStringParam("nama_produk", newProductModel.getNama());
-        smr.addStringParam("deskripsi_produk", newProductModel.getDeskripsi());
-        smr.addStringParam("id_sub_kategori", newProductModel.getSubkategori());
-        smr.addStringParam("berat_produk", newProductModel.getBerat());
-        smr.addStringParam("kondisi_produk", newProductModel.getKondisi());
-        smr.addStringParam("harga_mitra", newProductModel.getHarga());
-        smr.addStringParam("diskon", newProductModel.getDiskon());
-        smr.addStringParam("stok", newProductModel.getStok());
-        if (newProductModel.getDeletedphoto()!=null){
-            smr.addStringParam("gambarhapus", newProductModel.getDeletedphoto());
         }
-        ArrayList<Uri> uri = new ArrayList<>();
-        for (int i = 0; i < newProductModel.getUris().size(); i++){
-            if (newProductModel.getUris().get(i).getUri()!=null){
-                uri.add(newProductModel.getUris().get(i).getUri());
-            }
-        }
-
-        for (int i = 0; i < uri.size(); i++){
-                try {
-                    smr.addFile("image"+i, new File(new URI(uri.get(i).toString())).toString());
-                } catch (URISyntaxException e){
-                    Log.i(TAG, "addproduk: "+e.getMessage());
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String>  params = new HashMap<>();
+                params.put("nama_produk", newProductModel.getNama());
+                params.put("deskripsi_produk", newProductModel.getDeskripsi());
+                params.put("id_sub_kategori", newProductModel.getSubkategori());
+                params.put("berat_produk", newProductModel.getBerat());
+                params.put("kondisi_produk", newProductModel.getKondisi());
+                params.put("diskon", newProductModel.getDiskon());
+                params.put("harga_mitra", newProductModel.getHarga());
+                params.put("stok", newProductModel.getStok());
+                if (newProductModel.getDeletedphoto()!=null){
+                    params.put("gambarhapus", newProductModel.getDeletedphoto());
                 }
-        }
+                return params;
+            }
+        };
         requestQueue.add(smr);
+    }
+
+    public byte[] getFileDataFromDrawable(Bitmap bitmap) {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 80, byteArrayOutputStream);
+        return byteArrayOutputStream.toByteArray();
     }
 }

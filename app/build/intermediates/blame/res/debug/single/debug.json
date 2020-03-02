@@ -16,24 +16,24 @@
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\drawable\\foto_defaul_mitra.png"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
-        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\color\\abc_hint_foreground_material_dark.xml"
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
+        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\331630a23dfa1f0594bcf54d5352aa36\\core-1.1.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_fab_background.xml.flat",
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\3f2791d3ecf41ed9e54a91eddcfa2ad3\\material-1.0.0\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
-        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\331630a23dfa1f0594bcf54d5352aa36\\core-1.1.0\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
+        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
@@ -44,10 +44,6 @@
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_chivleft.xml.flat",
-        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\drawable\\icon_chivleft.xml"
-    },
-    {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\anim\\abc_slide_out_bottom.xml"
     },
@@ -56,20 +52,24 @@
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\drawable\\icon_backwhite.xml"
     },
     {
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_chivleft.xml.flat",
+        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\drawable\\icon_chivleft.xml"
+    },
+    {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable_promo1.jpg.flat",
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\drawable\\promo1.jpg"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\3f2791d3ecf41ed9e54a91eddcfa2ad3\\material-1.0.0\\res\\interpolator\\mtrl_linear.xml"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
@@ -392,12 +392,12 @@
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\34a4e7fff53ecf83f40193b81711c4da\\jetified-android-image-cropper-2.5.1\\res\\drawable-xxxhdpi-v4\\crop_image_menu_rotate_right.png"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_page_transaction.xml.flat",
-        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\layout\\page_transaction.xml"
-    },
-    {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_intro_2.xml.flat",
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\layout\\intro_2.xml"
+    },
+    {
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_page_transaction.xml.flat",
+        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\layout\\page_transaction.xml"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1184,12 +1184,12 @@
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\color_design_error.xml.flat",
-        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\3f2791d3ecf41ed9e54a91eddcfa2ad3\\material-1.0.0\\res\\color\\design_error.xml"
-    },
-    {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_intro_1.xml.flat",
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\layout\\intro_1.xml"
+    },
+    {
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\color_design_error.xml.flat",
+        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\3f2791d3ecf41ed9e54a91eddcfa2ad3\\material-1.0.0\\res\\color\\design_error.xml"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -2044,12 +2044,12 @@
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\6d206c10dfcd7e4d261b33c292c090cb\\play-services-base-17.1.0\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\3f2791d3ecf41ed9e54a91eddcfa2ad3\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
-    },
-    {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chatt.png.flat",
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\drawable\\chatt.png"
+    },
+    {
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
+        "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\3f2791d3ecf41ed9e54a91eddcfa2ad3\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_modelitem_address.xml.flat",
@@ -2176,16 +2176,16 @@
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_intro_3.xml.flat",
+        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\layout\\intro_3.xml"
+    },
+    {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_main.xml.flat",
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_bug.xml.flat",
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\drawable\\icon_bug.xml"
-    },
-    {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_intro_3.xml.flat",
-        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\layout\\intro_3.xml"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_page_paymentmethod.xml.flat",
@@ -2288,12 +2288,12 @@
         "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\fb8f7031ef66b8147647717c2aecca12\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_modelitem_groupbillhome4.xml.flat",
-        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\layout\\modelitem_groupbillhome4.xml"
-    },
-    {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable_intro2.jpg.flat",
         "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\drawable\\intro2.jpg"
+    },
+    {
+        "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\layout_modelitem_groupbillhome4.xml.flat",
+        "source": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\src\\main\\res\\layout\\modelitem_groupbillhome4.xml"
     },
     {
         "merged": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",

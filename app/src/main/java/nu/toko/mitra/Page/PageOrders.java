@@ -55,7 +55,6 @@ import static nu.toko.mitra.Utils.Staticvar.ID_TRANSAKSI_ITEM;
 import static nu.toko.mitra.Utils.Staticvar.ITEM;
 import static nu.toko.mitra.Utils.Staticvar.KOMEN;
 import static nu.toko.mitra.Utils.Staticvar.KURIR;
-import static nu.toko.mitra.Utils.Staticvar.METODE_KIRIM;
 import static nu.toko.mitra.Utils.Staticvar.NAMALENGKAP;
 import static nu.toko.mitra.Utils.Staticvar.NAMA_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.NOMINAL;
@@ -233,7 +232,7 @@ public class PageOrders  extends AppCompatActivity {
                 bill.setId_mitra(mitra.getInt(ID_MITRA));
 
                 alamat.setText(jsonObject.getString(ALAMAT_KIRIM));
-                kurir.setText(jsonObject.getString(KURIR));
+                kurir.setText(jsonObject.getString(KURIR).toUpperCase());
                 subtotal.setText("Rp."+ Others.PercantikHarga(jsonObject.getInt(SUB_TOTAL)));
                 ongkir.setText("Rp."+Others.PercantikHarga(jsonObject.getInt(HARGA_ONGKIR)));
                 total.setText("Rp."+Others.PercantikHarga(jsonObject.getInt(HARGA_TOTAL)));
@@ -305,6 +304,7 @@ public class PageOrders  extends AppCompatActivity {
                 JSONObject j = new JSONObject(response);
                 if (j.getString("msg").equals("dikirim")){
                     status = 3;
+                    deliverycontainer.setVisibility(View.GONE);
                     informasi.setVisibility(View.VISIBLE);
                     delivery.setVisibility(View.GONE);
                     dicline.setVisibility(View.GONE);

@@ -7,27 +7,19 @@ import java.io.File;
 
 public class PhotoModel {
 
-    private Uri uri;
+    private Bitmap bitmap;
     private String editurl;
 
     public PhotoModel() {
 
     }
 
-    public PhotoModel(Uri uri) {
-        this.uri = uri;
+    public PhotoModel(Bitmap uri) {
+        this.bitmap = uri;
     }
 
     public PhotoModel(String editurl) {
         this.editurl = editurl;
-    }
-
-    public Uri getUri() {
-        return uri;
-    }
-
-    public void setUri(Uri uri) {
-        this.uri = uri;
     }
 
     public String getEditurl() {
@@ -36,5 +28,13 @@ public class PhotoModel {
 
     public void setEditurl(String editurl) {
         this.editurl = editurl;
+    }
+
+    public Bitmap getBitmap() {
+        return bitmap;
+    }
+
+    public void setBitmap(Bitmap bitmap) {
+        this.bitmap = bitmap;
     }
 }
