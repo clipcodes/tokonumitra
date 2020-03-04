@@ -142,13 +142,13 @@ public class Home extends Fragment {
                     inpublished.setBackgroundColor(colorwhite);
                     inwaiting.setBackgroundColor(colorwhite);
                     indicline.setBackgroundColor(colorprimary);
-                    STATUS = 2;
+                    STATUS = 3;
                     break;
                 case R.id.waiting:
                     inpublished.setBackgroundColor(colorwhite);
                     inwaiting.setBackgroundColor(colorprimary);
                     indicline.setBackgroundColor(colorwhite);
-                    STATUS = 0;
+                    STATUS = 2;
                     break;
                 case R.id.published:
                     inpublished.setBackgroundColor(colorprimary);

@@ -207,6 +207,12 @@ public class Details extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 
     private Response.Listener<String> suksesproduct = new Response.Listener<String>() {
@@ -216,7 +222,7 @@ public class Details extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(response);
 
-                review.setText("  "+jsonObject.getString("totalfeedback")+" Reviews | "+jsonObject.getString("terjual")+" Terjual");
+                review.setText("  "+jsonObject.getString("totalfeedback")+" Ulasan | "+jsonObject.getString("terjual")+" Terjual");
                 rating.setText("("+jsonObject.getString("rating")+")");
                 ratingfeed.setText("("+jsonObject.getString("rating")+")");
                 star.setRating(Float.valueOf(jsonObject.getString("rating")));

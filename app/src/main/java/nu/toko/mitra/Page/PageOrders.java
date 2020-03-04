@@ -196,7 +196,6 @@ public class PageOrders  extends AppCompatActivity {
                         public void trigerbos() {
                             findViewById(R.id.deliverytex).setVisibility(View.INVISIBLE);
                             findViewById(R.id.deliveryprog).setVisibility(View.VISIBLE);
-
                             new ReqString(PageOrders.this, requestQueue).go(respontrans, TRANSAKSIDIKIRIM+idtrans+SLASH+resi.getText().toString());
                         }
                     });

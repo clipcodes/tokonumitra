@@ -118,6 +118,7 @@ public class Product2Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     activity.startActivity(i);
                 }
             });
+
             if(productModelNU.getKategorimitra().contains("Official")){
                 kategorimitra.setImageDrawable(activity.getResources().getDrawable(R.drawable.officialstore));
                 texkategori.setText("(Official Store)");
@@ -125,8 +126,8 @@ public class Product2Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 kategorimitra.setImageDrawable(activity.getResources().getDrawable(R.drawable.starseller));
                 texkategori.setText("(Star Seller)");
             } else {
-                kategorimitra.setImageDrawable(activity.getResources().getDrawable(R.drawable.starseller));
-                texkategori.setText("(Store)");
+                kategorimitra.setVisibility(View.GONE);
+                texkategori.setVisibility(View.GONE);
             }
         }
     }
@@ -170,6 +171,7 @@ public class Product2Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     activity.startActivity(i);
                 }
             });
+
             if(productModelNU.getKategorimitra().contains("Official")){
                 kategorimitra.setImageDrawable(activity.getResources().getDrawable(R.drawable.officialstore));
                 texkategori.setText("(Official Store)");
@@ -177,8 +179,8 @@ public class Product2Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 kategorimitra.setImageDrawable(activity.getResources().getDrawable(R.drawable.starseller));
                 texkategori.setText("(Star Seller)");
             } else {
-                kategorimitra.setImageDrawable(activity.getResources().getDrawable(R.drawable.starseller));
-                texkategori.setText("(Store)");
+                kategorimitra.setVisibility(View.GONE);
+                texkategori.setVisibility(View.GONE);
             }
         }
     }
