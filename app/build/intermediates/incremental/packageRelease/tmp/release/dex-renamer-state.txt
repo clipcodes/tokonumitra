@@ -1,0 +1,4 @@
+#Wed Mar 11 05:35:26 ICT 2020
+base.0=E\:\\Matrix\\Android\\Project\\Toko NU Mitra\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

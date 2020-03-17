@@ -55,9 +55,12 @@ import static nu.toko.mitra.Utils.Staticvar.ID_TRANSAKSI_ITEM;
 import static nu.toko.mitra.Utils.Staticvar.ITEM;
 import static nu.toko.mitra.Utils.Staticvar.KOMEN;
 import static nu.toko.mitra.Utils.Staticvar.KURIR;
+import static nu.toko.mitra.Utils.Staticvar.KURIRDET;
 import static nu.toko.mitra.Utils.Staticvar.NAMALENGKAP;
+import static nu.toko.mitra.Utils.Staticvar.NAMAPEMBELI;
 import static nu.toko.mitra.Utils.Staticvar.NAMA_PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.NOMINAL;
+import static nu.toko.mitra.Utils.Staticvar.NOMORPEMBELI;
 import static nu.toko.mitra.Utils.Staticvar.NOREK;
 import static nu.toko.mitra.Utils.Staticvar.PRODUK;
 import static nu.toko.mitra.Utils.Staticvar.QTY;
@@ -75,7 +78,7 @@ import static nu.toko.mitra.Utils.Staticvar.URL_BUKTI_TRANSAKSI;
 
 public class PageOrders  extends AppCompatActivity {
 
-    TextView alamat, subtotal, ongkir, total, kurir, atasnama, namabank, nominal, norek, infohead, info, ulasan;
+    TextView alamat, subtotal, ongkir, total, kurir, nomorpembeli, namapembeli, atasnama, namabank, nominal, norek, infohead, info, ulasan, kurirdet;
     String TAG = getClass().getSimpleName();
     List<BillingItemModel> billingItemModels;
     PayListAdapter billadap;
@@ -116,8 +119,11 @@ public class PageOrders  extends AppCompatActivity {
         subtotal = findViewById(R.id.subtotal);
         ongkir = findViewById(R.id.ongkir);
         total = findViewById(R.id.total);
+        namapembeli = findViewById(R.id.namapembeli);
         kurir = findViewById(R.id.kurir);
+        kurirdet = findViewById(R.id.kurirdet);
         atasnama = findViewById(R.id.atasnama);
+        nomorpembeli = findViewById(R.id.nomorpembeli);
         namabank = findViewById(R.id.namabank);
         nominal = findViewById(R.id.nominal);
         deliverycontainer = findViewById(R.id.deliverycontainer);
@@ -232,6 +238,9 @@ public class PageOrders  extends AppCompatActivity {
 
                 alamat.setText(jsonObject.getString(ALAMAT_KIRIM));
                 kurir.setText(jsonObject.getString(KURIR).toUpperCase());
+                kurirdet.setText(jsonObject.getString(KURIRDET));
+                namapembeli.setText(jsonObject.getString(NAMAPEMBELI));
+                nomorpembeli.setText(jsonObject.getString(NOMORPEMBELI));
                 subtotal.setText("Rp."+ Others.PercantikHarga(jsonObject.getInt(SUB_TOTAL)));
                 ongkir.setText("Rp."+Others.PercantikHarga(jsonObject.getInt(HARGA_ONGKIR)));
                 total.setText("Rp."+Others.PercantikHarga(jsonObject.getInt(HARGA_TOTAL)));

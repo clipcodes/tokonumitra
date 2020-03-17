@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
+            "outputFile": "E:\\Matrix\\Android\\Project\\Toko NU Mitra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\4e1b43fd265ec6b6f215d40b36d9df2f\\jetified-play-services-basement-17.0.0\\res\\values-ro\\values.xml",

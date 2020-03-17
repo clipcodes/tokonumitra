@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Matrix\\Android\\Project\\tokonumitra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
+            "outputFile": "E:\\Matrix\\Android\\Project\\Toko NU Mitra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
             "map": [
                 {
                     "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\64ffee2257d726550949b95ffdabd77e\\jetified-firebase-messaging-20.1.0\\res\\values-or\\values.xml",

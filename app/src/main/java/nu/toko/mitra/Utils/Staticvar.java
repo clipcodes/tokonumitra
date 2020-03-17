@@ -59,6 +59,9 @@ public class Staticvar {
     public static final String FEEDADDED = "feedadded";
     public static final String ID_TRANSAKSI = "id_transaksi";
     public static final String KURIR = "kurir";
+    public static final String KURIRDET = "kurirdet";
+    public static final String NAMAPEMBELI = "nama_pembeli";
+    public static final String NOMORPEMBELI = "nomor";
     public static final String ID_PEMBELI = "id_pembeli";
     public static final String ID_MITRA = "id_mitra";
     public static final String ID_USER_ADMIN = "id_user_admin";

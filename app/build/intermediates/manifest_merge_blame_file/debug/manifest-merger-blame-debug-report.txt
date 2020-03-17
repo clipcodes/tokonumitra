@@ -6,22 +6,22 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml
+8-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml
+9-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:5:5-66
-11-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:5:22-64
+11-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:5:5-66
+11-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:6:5-78
-12-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:6:22-76
+12-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:6:5-78
+12-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:7:5-79
-13-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:7:22-77
+13-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:7:5-79
+13-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:7:22-77
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:8:5-80
-14-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:8:22-78
+14-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:8:5-80
+14-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:8:22-78
 15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 15-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:24:5-68
 15-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:24:22-65
@@ -33,272 +33,272 @@
 17-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:26:22-107
 18
 19    <application
-19-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:10:5-115:19
+19-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:10:5-115:19
 20        android:allowBackup="true"
-20-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:11:9-35
+20-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:11:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 21-->[androidx.core:core:1.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\331630a23dfa1f0594bcf54d5352aa36\core-1.1.0\AndroidManifest.xml:24:18-86
 22        android:debuggable="true"
 23        android:hardwareAccelerated="false"
-23-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:15:9-44
+23-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:15:9-44
 24        android:icon="@drawable/icon"
-24-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:12:9-38
+24-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:12:9-38
 25        android:label="@string/app_name"
-25-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:13:9-41
+25-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:13:9-41
 26        android:largeHeap="true"
-26-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:16:9-33
+26-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:16:9-33
 27        android:networkSecurityConfig="@xml/network_security_config"
-27-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:19:9-69
+27-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:19:9-69
 28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:14:9-54
+28-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:14:9-54
 29        android:supportsRtl="true"
-29-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:17:9-35
+29-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:17:9-35
 30        android:theme="@style/AppTheme"
-30-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:20:9-40
+30-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:20:9-40
 31        android:usesCleartextTraffic="true" >
-31-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:18:9-44
+31-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:18:9-44
 32        <service
-32-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:21:9-29:19
+32-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:21:9-29:19
 33            android:name="nu.toko.mitra.Notifikasi.MyFirebaseMessagingService"
-33-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:22:13-66
+33-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:22:13-66
 34            android:exported="false" >
-34-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:23:13-37
+34-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:23:13-37
 35            <intent-filter>
-35-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:24:13-28:29
+35-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:24:13-28:29
 36                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-36-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:17-81
-36-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:25-78
+36-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:25:17-81
+36-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:25:25-78
 37                <action android:name="com.google.android.gms.iid.InstanceID" />
-37-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:26:17-80
-37-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:26:25-77
+37-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:26:17-80
+37-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:26:25-77
 38                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-38-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:17-78
-38-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:25-75
+38-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:27:17-78
+38-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:27:25-75
 39            </intent-filter>
 40        </service>
 41
 42        <activity
-42-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:30:9-40:20
+42-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:30:9-40:20
 43            android:name="nu.toko.mitra.Splash"
-43-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:31:13-35
+43-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:31:13-35
 44            android:label="@string/app_name"
-44-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:33:13-45
+44-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:33:13-45
 45            android:screenOrientation="portrait"
-45-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:32:13-49
+45-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:32:13-49
 46            android:theme="@style/AppTheme.NoActionBar" >
-46-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:34:13-56
+46-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:34:13-56
 47            <intent-filter>
-47-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:35:13-39:29
+47-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:35:13-39:29
 48                <action android:name="android.intent.action.MAIN" />
-48-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:36:17-69
-48-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:36:25-66
+48-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:36:17-69
+48-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:36:25-66
 49                <action android:name="android.intent.action.VIEW" />
-49-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:37:17-69
-49-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:37:25-66
+49-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:37:17-69
+49-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:37:25-66
 50
 51                <category android:name="android.intent.category.LAUNCHER" />
-51-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:38:17-77
-51-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:38:27-74
+51-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:38:17-77
+51-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:38:27-74
 52            </intent-filter>
 53        </activity>
 54        <activity
-54-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:41:9-42:52
+54-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:41:9-42:52
 55            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-55-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:41:19-82
+55-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:41:19-82
 56            android:screenOrientation="portrait" />
-56-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:42:13-49
+56-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:42:13-49
 57        <activity
-57-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:43:9-45:58
+57-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:43:9-45:58
 58            android:name="nu.toko.mitra.Page.Login"
-58-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:43:19-45
+58-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:43:19-45
 59            android:screenOrientation="portrait"
-59-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:44:13-49
+59-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:44:13-49
 60            android:theme="@style/AppTheme.NoActionBar" />
-60-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:45:13-56
+60-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:45:13-56
 61        <activity
-61-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:46:9-48:58
+61-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:46:9-48:58
 62            android:name="nu.toko.mitra.Intro"
-62-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:46:19-40
+62-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:46:19-40
 63            android:screenOrientation="portrait"
-63-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:47:13-49
+63-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:47:13-49
 64            android:theme="@style/AppTheme.NoActionBar" />
-64-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:48:13-56
+64-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:48:13-56
 65        <activity
-65-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:49:9-51:58
+65-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:49:9-51:58
 66            android:name="nu.toko.mitra.MainActivity"
-66-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:49:19-47
+66-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:49:19-47
 67            android:screenOrientation="portrait"
-67-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:50:13-49
+67-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:50:13-49
 68            android:theme="@style/AppTheme.NoActionBar" />
-68-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:51:13-56
+68-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:51:13-56
 69        <activity
-69-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:52:9-54:58
+69-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:52:9-54:58
 70            android:name="nu.toko.mitra.Page.Details"
-70-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:52:19-47
+70-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:52:19-47
 71            android:screenOrientation="portrait"
-71-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:53:13-49
+71-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:53:13-49
 72            android:theme="@style/AppTheme.NoActionBar" />
-72-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:54:13-56
+72-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:54:13-56
 73        <activity
-73-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:55:9-57:58
+73-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:55:9-57:58
 74            android:name="nu.toko.mitra.Page.Categories"
-74-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:55:19-50
+74-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:55:19-50
 75            android:screenOrientation="portrait"
-75-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:56:13-49
+75-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:56:13-49
 76            android:theme="@style/AppTheme.NoActionBar" />
-76-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:57:13-56
+76-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:57:13-56
 77        <activity
-77-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:58:9-60:58
+77-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:58:9-60:58
 78            android:name="nu.toko.mitra.Page.CartOrder"
-78-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:58:19-49
+78-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:58:19-49
 79            android:screenOrientation="portrait"
-79-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:59:13-49
+79-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:59:13-49
 80            android:theme="@style/AppTheme.NoActionBar" />
-80-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:60:13-56
+80-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:60:13-56
 81        <activity
-81-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:61:9-63:58
+81-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:61:9-63:58
 82            android:name="nu.toko.mitra.Page.Checkout"
-82-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:61:19-48
+82-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:61:19-48
 83            android:screenOrientation="portrait"
-83-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:62:13-49
+83-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:62:13-49
 84            android:theme="@style/AppTheme.NoActionBar" />
-84-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:63:13-56
+84-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:63:13-56
 85        <activity
-85-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:64:9-66:58
+85-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:64:9-66:58
 86            android:name="nu.toko.mitra.Page.UserSetting"
-86-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:64:19-51
+86-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:64:19-51
 87            android:screenOrientation="portrait"
-87-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:65:13-49
+87-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:65:13-49
 88            android:theme="@style/AppTheme.NoActionBar" />
-88-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:66:13-56
+88-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:66:13-56
 89        <activity
-89-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:67:9-69:58
+89-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:67:9-69:58
 90            android:name="nu.toko.mitra.Page.DetailPayment"
-90-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:67:19-53
+90-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:67:19-53
 91            android:screenOrientation="portrait"
-91-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:68:13-49
+91-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:68:13-49
 92            android:theme="@style/AppTheme.NoActionBar" />
-92-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:69:13-56
+92-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:69:13-56
 93        <activity
-93-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:70:9-72:58
+93-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:70:9-72:58
 94            android:name="nu.toko.mitra.Page.PageAddress"
-94-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:70:19-51
+94-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:70:19-51
 95            android:screenOrientation="portrait"
-95-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:71:13-49
+95-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:71:13-49
 96            android:theme="@style/AppTheme.NoActionBar" />
-96-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:72:13-56
+96-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:72:13-56
 97        <activity
-97-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:73:9-75:58
+97-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:73:9-75:58
 98            android:name="nu.toko.mitra.Page.AddPageAddress"
-98-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:73:19-54
+98-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:73:19-54
 99            android:screenOrientation="portrait"
-99-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:74:13-49
+99-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:74:13-49
 100            android:theme="@style/AppTheme.NoActionBar" />
-100-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:75:13-56
+100-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:75:13-56
 101        <activity
-101-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:76:9-78:58
+101-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:76:9-78:58
 102            android:name="nu.toko.mitra.Page.PagePaymentMethod"
-102-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:76:19-57
+102-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:76:19-57
 103            android:screenOrientation="portrait"
-103-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:77:13-49
+103-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:77:13-49
 104            android:theme="@style/AppTheme.NoActionBar" />
-104-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:78:13-56
+104-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:78:13-56
 105        <activity
-105-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:79:9-81:58
+105-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:79:9-81:58
 106            android:name="nu.toko.mitra.Page.PagePay"
-106-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:79:19-47
+106-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:79:19-47
 107            android:screenOrientation="portrait"
-107-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:80:13-49
+107-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:80:13-49
 108            android:theme="@style/AppTheme.NoActionBar" />
-108-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:81:13-56
+108-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:81:13-56
 109        <activity
-109-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:82:9-84:58
+109-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:82:9-84:58
 110            android:name="nu.toko.mitra.Page.Billing"
-110-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:82:19-47
+110-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:82:19-47
 111            android:screenOrientation="portrait"
-111-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:83:13-49
+111-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:83:13-49
 112            android:theme="@style/AppTheme.NoActionBar" />
-112-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:84:13-56
+112-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:84:13-56
 113        <activity
-113-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:85:9-87:58
+113-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:85:9-87:58
 114            android:name="nu.toko.mitra.Page.PageOrders"
-114-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:85:19-50
+114-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:85:19-50
 115            android:screenOrientation="portrait"
-115-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:86:13-49
+115-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:86:13-49
 116            android:theme="@style/AppTheme.NoActionBar" />
-116-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:87:13-56
+116-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:87:13-56
 117        <activity
-117-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:88:9-90:58
+117-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:88:9-90:58
 118            android:name="nu.toko.mitra.Page.PagePencarian"
-118-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:88:19-53
+118-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:88:19-53
 119            android:screenOrientation="portrait"
-119-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:89:13-49
+119-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:89:13-49
 120            android:theme="@style/AppTheme.NoActionBar" />
-120-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:90:13-56
+120-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:90:13-56
 121        <activity
-121-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:91:9-93:58
+121-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:91:9-93:58
 122            android:name="nu.toko.mitra.Page.PagePhotoView"
-122-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:91:19-53
+122-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:91:19-53
 123            android:screenOrientation="portrait"
-123-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:92:13-49
+123-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:92:13-49
 124            android:theme="@style/AppTheme.NoActionBar" />
-124-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:93:13-56
+124-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:93:13-56
 125        <activity
-125-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:94:9-96:58
+125-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:94:9-96:58
 126            android:name="nu.toko.mitra.Page.AddProduct"
-126-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:94:19-50
+126-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:94:19-50
 127            android:screenOrientation="portrait"
-127-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:95:13-49
+127-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:95:13-49
 128            android:theme="@style/AppTheme.NoActionBar" />
-128-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:96:13-56
+128-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:96:13-56
 129        <activity
-129-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:97:9-99:58
+129-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:97:9-99:58
 130            android:name="nu.toko.mitra.Page.KategoriChooser"
-130-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:97:19-55
+130-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:97:19-55
 131            android:screenOrientation="portrait"
-131-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:98:13-49
+131-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:98:13-49
 132            android:theme="@style/AppTheme.NoActionBar" />
-132-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:99:13-56
+132-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:99:13-56
 133        <activity
-133-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:100:9-102:58
+133-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:100:9-102:58
 134            android:name="nu.toko.mitra.Page.SubKategoriChooser"
-134-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:100:19-58
+134-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:100:19-58
 135            android:screenOrientation="portrait"
-135-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:101:13-49
+135-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:101:13-49
 136            android:theme="@style/AppTheme.NoActionBar" />
-136-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:102:13-56
+136-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:102:13-56
 137        <activity
-137-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:103:9-105:58
+137-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:103:9-105:58
 138            android:name="nu.toko.mitra.Page.Chats"
-138-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:103:19-45
+138-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:103:19-45
 139            android:screenOrientation="portrait"
-139-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:104:13-49
+139-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:104:13-49
 140            android:theme="@style/AppTheme.NoActionBar" />
-140-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:105:13-56
+140-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:105:13-56
 141        <activity
-141-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:106:9-108:58
+141-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:106:9-108:58
 142            android:name="nu.toko.mitra.Page.ChatRoom"
-142-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:106:19-48
+142-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:106:19-48
 143            android:screenOrientation="portrait"
-143-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:107:13-49
+143-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:107:13-49
 144            android:theme="@style/AppTheme.NoActionBar" />
-144-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:108:13-56
+144-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:108:13-56
 145        <activity
-145-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:109:9-111:58
+145-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:109:9-111:58
 146            android:name="nu.toko.mitra.Page.PageProv"
-146-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:109:19-48
+146-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:109:19-48
 147            android:screenOrientation="portrait"
-147-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:110:13-49
+147-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:110:13-49
 148            android:theme="@style/AppTheme.NoActionBar" />
-148-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:111:13-56
+148-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:111:13-56
 149        <activity
-149-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:112:9-114:58
+149-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:112:9-114:58
 150            android:name="nu.toko.mitra.Page.PageKota"
-150-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:112:19-48
+150-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:112:19-48
 151            android:screenOrientation="portrait"
-151-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:113:13-49
+151-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:113:13-49
 152            android:theme="@style/AppTheme.NoActionBar" />
-152-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:114:13-56
+152-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:114:13-56
 153        <activity
 153-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\1569b356ae21c59997606b87853bf436\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
 154            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
@@ -396,8 +396,8 @@
 205-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:31:13-33:29
 205-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\64ffee2257d726550949b95ffdabd77e\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:31:28-51
 206                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-206-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:17-78
-206-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:27:25-75
+206-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:27:17-78
+206-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:27:25-75
 207            </intent-filter>
 208        </service>
 209
@@ -412,8 +412,8 @@
 214            <intent-filter>
 214-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\haade\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
 215                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-215-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:17-81
-215-->E:\Matrix\Android\Project\tokonumitra\app\src\main\AndroidManifest.xml:25:25-78
+215-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:25:17-81
+215-->E:\Matrix\Android\Project\Toko NU Mitra\app\src\main\AndroidManifest.xml:25:25-78
 216            </intent-filter>
 217        </receiver>
 218
