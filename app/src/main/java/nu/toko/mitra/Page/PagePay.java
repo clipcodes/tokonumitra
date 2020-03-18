@@ -145,16 +145,6 @@ public class PagePay extends AppCompatActivity {
                         CropImage.startPickImageActivity(PagePay.this);
                     }
                 break;
-                case R.id.cofirm:
-                    if (tanggal.isEmpty()){
-                        Toast.makeText(PagePay.this, "Tentukan Tanggal Transfer", Toast.LENGTH_SHORT).show();
-                        return;
-                    }
-
-                    paytex.setVisibility(View.GONE);
-                    progres.setVisibility(View.VISIBLE);
-                    new ReqString(PagePay.this, requestQueue).multipart(responmultipart, BAYAR, idtrans, tanggal, file);
-                break;
                 case R.id.tentukan:
                     // Get Current Date
                     c = Calendar.getInstance();

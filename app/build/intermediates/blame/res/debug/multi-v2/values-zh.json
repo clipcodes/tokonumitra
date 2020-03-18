@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Matrix\\Android\\Project\\Toko NU Mitra\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "/Users/samcgi_rd/Documents/project/mobile/tokonumitra/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\haade\\.gradle\\caches\\transforms-2\\files-2.1\\34a4e7fff53ecf83f40193b81711c4da\\jetified-android-image-cropper-2.5.1\\res\\values-zh\\values-zh.xml",
+                    "source": "/Users/samcgi_rd/.gradle/caches/transforms-2/files-2.1/603199648ff918683de1e769d81c9c46/jetified-android-image-cropper-2.5.1/res/values-zh/values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

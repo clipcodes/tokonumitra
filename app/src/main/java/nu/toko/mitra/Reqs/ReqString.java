@@ -6,18 +6,17 @@ import android.net.Uri;
 import android.util.Log;
 
 import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.NetworkError;
 import com.android.volley.NetworkResponse;
+import com.android.volley.NoConnectionError;
+import com.android.volley.ParseError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
-import com.android.volley.error.NetworkError;
-import com.android.volley.error.NoConnectionError;
-import com.android.volley.error.ParseError;
-import com.android.volley.error.ServerError;
-import com.android.volley.error.TimeoutError;
-import com.android.volley.error.VolleyError;
-import com.android.volley.request.SimpleMultiPartRequest;
-import com.android.volley.request.StringRequest;
+import com.android.volley.ServerError;
+import com.android.volley.TimeoutError;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import java.io.ByteArrayOutputStream;
@@ -112,28 +111,6 @@ public class ReqString {
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         requestQueue.add(postRequest);
-    }
-
-    public void multipart(Response.Listener<String> responstatus, String url, String idtrans, String tanggal, File uri){
-        SimpleMultiPartRequest smr = new SimpleMultiPartRequest(Request.Method.POST, url,
-                responstatus, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                if (error instanceof TimeoutError || error instanceof NoConnectionError) {
-                    Log.i("RESPON EROR", "TimeoutError NoConnectionError");
-                } else if (error instanceof ServerError) {
-                    Log.i("RESPON EROR", "ServerError");
-                } else if (error instanceof NetworkError) {
-                    Log.i("RESPON EROR", "NetworkError");
-                } else if (error instanceof ParseError) {
-                    Log.i("RESPON EROR", "ParseError");
-                }
-            }
-        });
-        smr.addStringParam("id_transaksi", idtrans);
-        smr.addStringParam("tgl_transaksi", tanggal);
-        smr.addFile("image", uri.toString());
-        requestQueue.add(smr);
     }
 
     public void foto(final String nama, final Bitmap bitmap, Response.Listener<NetworkResponse> res, String url) {

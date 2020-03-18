@@ -41,7 +41,7 @@ public class SignUp extends Fragment {
     CardView signup;
     ProgressBar loding;
     RequestQueue requestQueue;
-    EditText email_mitra, nama_mitra, nama_toko_mitra, nik_mitra, alamat_toko_mitra, no_telp_mitra, no_rekening_mitra, deskripsi_toko_mitra, kecamatan_mitra, kode_pos_mitra, password;
+    EditText email_mitra, nama_mitra, nama_bank, nama_toko_mitra, nik_mitra, alamat_toko_mitra, no_telp_mitra, no_rekening_mitra, deskripsi_toko_mitra, kecamatan_mitra, kode_pos_mitra, password;
     TextView err;
     TextView gotex, provinsi_mitra, kabupaten_mitra;
     ProgressBar progress;
@@ -74,6 +74,7 @@ public class SignUp extends Fragment {
                 usr.setDeskripsi_toko_mitra(deskripsi_toko_mitra.getText().toString());
                 usr.setKode_pos_mitra(kode_pos_mitra.getText().toString());
                 usr.setNo_rekening_mitra(no_rekening_mitra.getText().toString());
+                usr.setNama_bank(nama_bank.getText().toString());
 
                 if (usr.getEmail_mitra().isEmpty()){
                     err.setText("Isikan Email");
@@ -107,6 +108,11 @@ public class SignUp extends Fragment {
 
                 if (usr.getNo_rekening_mitra().isEmpty()){
                     err.setText("Isikan Nomor Rekening");
+                    return;
+                }
+
+                if (usr.getNama_bank().isEmpty()){
+                    err.setText("Isikan Nama Bank Rekening");
                     return;
                 }
 
@@ -176,6 +182,7 @@ public class SignUp extends Fragment {
         kabupaten_mitra = view.findViewById(R.id.kabupaten_mitra);
         kecamatan_mitra = view.findViewById(R.id.kecamatan_mitra);
         kode_pos_mitra = view.findViewById(R.id.kode_pos_mitra);
+        nama_bank = view.findViewById(R.id.nama_bank);
 
         view.findViewById(R.id.pilihprov).setOnClickListener(new View.OnClickListener() {
             @Override

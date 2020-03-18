@@ -803,8 +803,6 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
-color photo_crop_dim_color
-color photo_crop_highlight_color
 color pink
 color primary_dark_material_dark
 color primary_dark_material_light
@@ -823,7 +821,6 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
-color solid_black
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1049,9 +1046,6 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
-dimen photo_crop_stroke_width
-dimen photo_crop_width
-dimen photo_preview_size
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1579,6 +1573,7 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id nama
+id nama_bank
 id nama_mitra
 id nama_toko_mitra
 id namabank
@@ -2032,7 +2027,6 @@ string abc_toolbar_collapse_description
 string action_settings
 string app_name
 string appbar_scrolling_view_behavior
-string auth_failed
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
@@ -2070,9 +2064,6 @@ string fb_login_protocol_scheme
 string fcm_fallback_notification_channel_label
 string firebase_database_url
 string gcm_defaultSenderId
-string generic_error
-string generic_server_down
-string generic_server_timeout
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
@@ -2081,9 +2072,6 @@ string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
 string navigation_drawer_close
 string navigation_drawer_open
-string no_internet
-string no_network_connection
-string parsing_failed
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

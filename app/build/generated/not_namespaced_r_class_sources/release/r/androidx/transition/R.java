@@ -30,8 +30,8 @@ public final class R {
 
         public static final int notification_action_color_filter = 0x7f050082;
         public static final int notification_icon_bg_color = 0x7f050083;
-        public static final int ripple_material_light = 0x7f050093;
-        public static final int secondary_text_default_material_light = 0x7f050095;
+        public static final int ripple_material_light = 0x7f050091;
+        public static final int secondary_text_default_material_light = 0x7f050093;
     }
     public static final class dimen {
         private dimen() {}
@@ -94,28 +94,28 @@ public final class R {
         public static final int italic = 0x7f0800eb;
         public static final int line1 = 0x7f080108;
         public static final int line3 = 0x7f080109;
-        public static final int normal = 0x7f080130;
-        public static final int notification_background = 0x7f080132;
-        public static final int notification_main_column = 0x7f080133;
-        public static final int notification_main_column_container = 0x7f080134;
-        public static final int parent_matrix = 0x7f080141;
-        public static final int right_icon = 0x7f08016f;
-        public static final int right_side = 0x7f080170;
-        public static final int save_image_matrix = 0x7f080188;
-        public static final int save_non_transition_alpha = 0x7f080189;
-        public static final int save_scale_type = 0x7f08018a;
-        public static final int tag_transition_group = 0x7f0801c9;
-        public static final int tag_unhandled_key_event_manager = 0x7f0801ca;
-        public static final int tag_unhandled_key_listeners = 0x7f0801cb;
-        public static final int text = 0x7f0801dd;
-        public static final int text2 = 0x7f0801de;
-        public static final int time = 0x7f0801eb;
-        public static final int title = 0x7f0801ee;
-        public static final int transition_current_scene = 0x7f0801f8;
-        public static final int transition_layout_save = 0x7f0801f9;
-        public static final int transition_position = 0x7f0801fa;
-        public static final int transition_scene_layoutid_cache = 0x7f0801fb;
-        public static final int transition_transform = 0x7f0801fc;
+        public static final int normal = 0x7f080131;
+        public static final int notification_background = 0x7f080133;
+        public static final int notification_main_column = 0x7f080134;
+        public static final int notification_main_column_container = 0x7f080135;
+        public static final int parent_matrix = 0x7f080142;
+        public static final int right_icon = 0x7f080170;
+        public static final int right_side = 0x7f080171;
+        public static final int save_image_matrix = 0x7f080189;
+        public static final int save_non_transition_alpha = 0x7f08018a;
+        public static final int save_scale_type = 0x7f08018b;
+        public static final int tag_transition_group = 0x7f0801ca;
+        public static final int tag_unhandled_key_event_manager = 0x7f0801cb;
+        public static final int tag_unhandled_key_listeners = 0x7f0801cc;
+        public static final int text = 0x7f0801de;
+        public static final int text2 = 0x7f0801df;
+        public static final int time = 0x7f0801ec;
+        public static final int title = 0x7f0801ef;
+        public static final int transition_current_scene = 0x7f0801f9;
+        public static final int transition_layout_save = 0x7f0801fa;
+        public static final int transition_position = 0x7f0801fb;
+        public static final int transition_scene_layoutid_cache = 0x7f0801fc;
+        public static final int transition_transform = 0x7f0801fd;
     }
     public static final class integer {
         private integer() {}
@@ -135,7 +135,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f0e005a;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0053;
     }
     public static final class style {
         private style() {}

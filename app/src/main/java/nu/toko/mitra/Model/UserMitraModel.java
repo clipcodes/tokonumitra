@@ -2,8 +2,19 @@ package nu.toko.mitra.Model;
 
 public class UserMitraModel {
 
-    String email_mitra, nama_mitra, nama_toko_mitra, nik_mitra, alamat_toko_mitra, no_telp_mitra, no_rekening_mitra,
-            deskripsi_toko_mitra, provinsi_mitra, kabupaten_mitra, kecamatan_mitra, kode_pos_mitra;
+    String email_mitra;
+    String nama_mitra;
+    String nama_toko_mitra;
+    String nik_mitra;
+    String alamat_toko_mitra;
+    String no_telp_mitra;
+    String no_rekening_mitra;
+    String deskripsi_toko_mitra;
+    String provinsi_mitra;
+    String kabupaten_mitra;
+    String kecamatan_mitra;
+    String kode_pos_mitra;
+    private String nama_bank;
 
     public UserMitraModel() {
 
@@ -103,5 +114,13 @@ public class UserMitraModel {
 
     public void setKode_pos_mitra(String kode_pos_mitra) {
         this.kode_pos_mitra = kode_pos_mitra;
+    }
+
+    public String getNama_bank() {
+        return nama_bank;
+    }
+
+    public void setNama_bank(String nama_bank) {
+        this.nama_bank = nama_bank;
     }
 }
